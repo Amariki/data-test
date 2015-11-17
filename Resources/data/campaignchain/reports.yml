@@ -1,0 +1,325 @@
+\CampaignChain\CoreBundle\Entity\ReportAnalyticsActivityMetric:
+    activity_metric_twitter_retweets:
+        name: Retweets
+        bundle: @bundle_operation_twitter->name
+    activity_metric_twitter_favorites:
+        name: Favorites
+        bundle: @bundle_operation_twitter->name
+    activity_metric_facebook_likes:
+        name: Likes
+        bundle: @bundle_operation_facebook->name
+    activity_metric_facebook_comments:
+        name: Comments
+        bundle: @bundle_operation_facebook->name
+    activity_metric_linkedin_likes:
+        name: Likes
+        bundle: @bundle_operation_linkedin->name
+    activity_metric_linkedin_comments:
+        name: Comments
+        bundle: @bundle_operation_linkedin->name
+    activity_metric_gotowebinar_registrants:
+        name: Registrants
+        bundle: @bundle_operation_gotowebinar->name
+    activity_metric_gotowebinar_attendees:
+        name: Attendees
+        bundle: @bundle_operation_gotowebinar->name
+    activity_metric_slideshare_views:
+        name: Views
+        bundle: @bundle_operation_slideshare->name
+    activity_metric_slideshare_favorites:
+        name: Favorites
+        bundle: @bundle_operation_slideshare->name
+    activity_metric_slideshare_downloads:
+        name: Downloads
+        bundle: @bundle_operation_slideshare->name
+    activity_metric_slideshare_comments:
+        name: Comments
+        bundle: @bundle_operation_slideshare->name
+    activity_metric_mailchimp_unsubscribes:
+        name: Unsubscribes
+        bundle: @bundle_operation_mailchimp->name
+    activity_metric_mailchimp_opens:
+        name: Opens
+        bundle: @bundle_operation_mailchimp->name
+    activity_metric_mailchimp_unique_opens:
+        name: Unique opens
+        bundle: @bundle_operation_mailchimp->name
+    activity_metric_mailchimp_clicks:
+        name: Clicks
+        bundle: @bundle_operation_mailchimp->name
+    activity_metric_mailchimp_unique_clicks:
+        name: Unique clicks
+        bundle: @bundle_operation_mailchimp->name
+    activity_metric_mailchimp_emails_sent:
+        name: Emails sent
+        bundle: @bundle_operation_mailchimp->name
+    activity_metric_mailchimp_users_who_clicked:
+        name: Users who clicked
+        bundle: @bundle_operation_mailchimp->name
+
+\CampaignChain\CoreBundle\Entity\ReportAnalyticsActivityFact:
+    # GoToWebinar
+    activity_fact_gotowebinar_registrants1:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 9
+        time: @campaign3->startDate
+    activity_fact_gotowebinar_registrants2:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 27
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants1->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants3:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 55
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants2->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants4:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 102
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants3->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants5:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 172
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants4->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants6:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 225
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants5->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants7:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 289
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants6->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants8:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 361
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants7->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants9:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 399
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants8->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_registrants10:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_registrants
+        value: 433
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants9->time, @activity_gotowebinar1->startDate)>
+    activity_fact_gotowebinar_attendees{1..20}:
+        activity: @activity_gotowebinar1
+        campaign: @campaign3
+        metric: @activity_metric_gotowebinar_attendees
+        value: 512
+        time: <dateTimeBetween(@activity_fact_gotowebinar_registrants10->time, @campaign3->endDate)>
+    # Campaign 1, Activity 1, Facebook, Metric 1
+    activity_fact_facebook1:
+        activity: @activity_facebook1
+        campaign: @campaign1
+        metric: @activity_metric_facebook_likes
+        value: <numberBetween(100, 10000)>
+        time: @activity_facebook1->startDate
+    activity_fact_facebook{2..10}:
+        activity: @activity_facebook1
+        campaign: @campaign1
+        metric: @activity_metric_facebook_likes
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook1->startDate, @campaign1->endDate)>
+    activity_fact_facebook{11..20}:
+        activity: @activity_facebook1
+        campaign: @campaign1
+        metric: @activity_metric_facebook_comments
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook1->startDate, @campaign1->endDate)>
+    # Campaign 1, Activity 2, Facebook, Metric 1
+    activity_fact_facebook{51..60}:
+        activity: @activity_facebook2
+        campaign: @campaign1
+        metric: @activity_metric_facebook_likes
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook2->startDate, @campaign1->endDate)>
+    activity_fact_facebook{61..70}:
+        activity: @activity_facebook2
+        campaign: @campaign1
+        metric: @activity_metric_facebook_comments
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook2->startDate, @campaign1->endDate)>
+    # Campaign 1, Activity 3, Facebook, Metric 1
+    activity_fact_facebook{101..110}:
+        activity: @activity_facebook3
+        campaign: @campaign1
+        metric: @activity_metric_facebook_likes
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook3->startDate, @campaign1->endDate)>
+    activity_fact_facebook{111..120}:
+        activity: @activity_facebook3
+        campaign: @campaign1
+        metric: @activity_metric_facebook_comments
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook3->startDate, @campaign1->endDate)>
+    # Campaign 1, Activity 4, Facebook, Metric 1
+    activity_fact_facebook{151..160}:
+        activity: @activity_facebook4
+        campaign: @campaign1
+        metric: @activity_metric_facebook_likes
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook4->startDate, @campaign1->endDate)>
+    activity_fact_facebook{161..170}:
+        activity: @activity_facebook4
+        campaign: @campaign1
+        metric: @activity_metric_facebook_comments
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@activity_facebook4->startDate, @campaign1->endDate)>
+
+\CampaignChain\CoreBundle\Entity\ReportAnalyticsChannelMetric:
+    channel_metric_facebook{1..5}:
+        name: Facebook Channel Metric <current()>
+    channel_metric_twitter{1..5}:
+        name: Twitter Channel Metric <current()>
+
+\CampaignChain\CoreBundle\Entity\ReportAnalyticsChannelFact:
+    # Campaign 1, Facebook, Metric 1
+    channel_fact_facebook1:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook1
+        value: <numberBetween(100, 10000)>
+        time: @activity_facebook1->startDate
+    channel_fact_facebook{2..10}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook1
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{11..20}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook2
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{21..30}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook3
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{31..40}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook4
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{41..50}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook5
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    # Campaign 1, Facebook, Metric 1
+    channel_fact_facebook{51..60}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook1
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{61..70}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook2
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{71..80}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook3
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{81..90}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook4
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{91..100}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook5
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    # Campaign 1, Facebook, Metric 1
+    channel_fact_facebook{101..110}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook1
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{111..120}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook2
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{121..130}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook3
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{131..140}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook4
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{141..150}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook5
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    # Campaign 1, Facebook, Metric 1
+    channel_fact_facebook{151..160}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook1
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{161..170}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook2
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{171..180}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook3
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{181..190}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook4
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+    channel_fact_facebook{191..200}:
+        channel: @channel_facebook
+        campaign: @campaign1
+        metric: @channel_metric_facebook5
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+
+# TODO: Add some stats for milestones

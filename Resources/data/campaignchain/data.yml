@@ -1,0 +1,6 @@
+include:
+    - modules.yml
+    - core.yml
+    - operations.yml
+    - reports.yml
+    - ctas.yml

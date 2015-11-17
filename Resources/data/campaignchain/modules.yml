@@ -1,0 +1,880 @@
+\CampaignChain\CoreBundle\Entity\Bundle:
+    bundle_core:
+        name: campaignchain/core
+        description: Community Edition of CampaignChain.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-core
+        path: vendor/campaignchain/core
+        class: "CampaignChain\CoreBundle\CampaignChainCoreBundle"
+    bundle_distribution:
+        name: campaignchain/distribution-ce
+        description: Community Edition of CampaignChain.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-distribution
+        path: vendor/campaignchain/distribution-ce
+        class: "CampaignChain\DistributionCeBundle\CampaignChainDistributionCeBundle"
+    bundle_security_authentication_client_oauth:
+        name: campaignchain/security-authentication-client-oauth
+        description: OAuth client to be used by channel modules.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-security
+        path: vendor/campaignchain/security-authentication-client-oauth
+        class: "CampaignChain\Security\Authentication\Client\OAuthBundle\CampaignChainSecurityAuthenticationClientOAuthBundle"
+    bundle_channel_facebook:
+        name: campaignchain/channel-facebook
+        description: Connect with Facebook.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-facebook
+        class: "CampaignChain\Channel\FacebookBundle\CampaignChainChannelFacebookBundle"
+    bundle_channel_twitter:
+        name: campaignchain/channel-twitter
+        description: Connect with Twitter.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-twitter
+        class: "CampaignChain\Channel\TwitterBundle\CampaignChainChannelTwitterBundle"
+    bundle_channel_linkedin:
+        name: campaignchain/channel-linkedin
+        description: Connect with LinkedIn.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-linkedin
+        class: "CampaignChain\Channel\LinkedInBundle\CampaignChainChannelLinkedInBundle"
+    bundle_channel_website:
+        name: campaignchain/channel-website
+        description: Connect with a Website.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-website
+        class: "CampaignChain\Channel\WebsiteBundle\CampaignChainChannelWebsiteBundle"
+    bundle_channel_citrix:
+        name: campaignchain/channel-citrix
+        description: Connects to Citrix services such as GoToMeeting or GoToWebinar.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-citrix
+        class: "CampaignChain\Channel\CitrixBundle\CampaignChainChannelCitrixBundle"
+    bundle_channel_mailchimp:
+        name: campaignchain/channel-mailchimp
+        description: Connects to MailChimp.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-mailchimp
+        class: "CampaignChain\Channel\MailChimpBundle\CampaignChainChannelMailChimpBundle"
+    bundle_channel_slideshare:
+        name: campaignchain/channel-slideshare
+        description: Connects to SlideShare.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-slideshare
+        class: "CampaignChain\Channel\SlideShareBundle\CampaignChainChannelSlideShareBundle"
+    bundle_location_twitter:
+        name: campaignchain/location-twitter
+        description: Integrates Twitter locations such as user stream and status.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-twitter
+        class: "CampaignChain\Location\TwitterBundle\CampaignChainLocationTwitterBundle"
+    bundle_location_linkedin:
+        name: campaignchain/location-linkedin
+        description: LinkedIn user stream.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-linkedin
+        class: "CampaignChain\Location\LinkedInBundle\CampaignChainLocationLinkedInBundle"
+    bundle_location_facebook:
+        name: campaignchain/location-facebook
+        description: Facebook user and page stream.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-facebook
+        class: "CampaignChain\Location\FacebookBundle\CampaignChainLocationFacebookBundle"
+    bundle_location_website:
+        name: campaignchain/location-website
+        description: Simple module that connects a Website and to define its pages as CampaignChain Locations.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-website
+        class: "CampaignChain\Location\WebsiteBundle\CampaignChainLocationWebsiteBundle"
+    bundle_location_citrix:
+        name: campaignchain/location-citrix
+        description: Holds information about a Citrix Location and user.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-website
+        class: "CampaignChain\Location\CitrixBundle\CampaignChainLocationCitrixBundle"
+    bundle_location_mailchimp:
+        name: campaignchain/location-mailchimp
+        description: MailChimp account owner and newsletter Location.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-mailchimp
+        class: "CampaignChain\Location\MailChimpBundle\CampaignChainLocationMailChimpBundle"
+    bundle_location_slideshare:
+        name: campaignchain/location-slideshare
+        description: Holds information about a SlideShare user.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-slideshare
+        class: "CampaignChain\Location\SlideShareBundle\CampaignChainLocationSlideShareBundle"
+    bundle_campaign_scheduled:
+        name: campaignchain/campaign-scheduled
+        description: A campaign with a start and end date.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-campaign
+        path: vendor/campaignchain/campaign-scheduled
+        class: "CampaignChain\Campaign\ScheduledCampaignBundle\CampaignChainCampaignScheduledCampaignBundle"
+    bundle_campaign_template:
+        name: campaignchain/campaign-template
+        description: Create re-usable templates of campaigns.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-campaign
+        path: vendor/campaignchain/campaign-template
+        class: "CampaignChain\Campaign\TemplateBundle\CampaignChainCampaignTemplateBundle"
+    bundle_campaign_repeating:
+        name: campaignchain/campaign-repeating
+        description: A campaign that is being repeated automatically.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-campaign
+        path: vendor/campaignchain/campaign-repeating
+        class: "CampaignChain\Campaign\RepeatingBundle\CampaignChainCampaignRepeatingBundle"
+    bundle_milestone_scheduled:
+        name: campaignchain/milestone-scheduled
+        description: A milestone with a due date.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-milestone
+        path: vendor/campaignchain/milestone-scheduled
+        class: "CampaignChain\Milestone\ScheduledMilestoneBundle\CampaignChainMilestoneScheduledMilestoneBundle"
+    bundle_activity_facebook:
+        name: campaignchain/activity-facebook
+        description: Collection of various Facebook activities, such as post or share a message.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-facebook
+        class: "CampaignChain\Activity\FacebookBundle\CampaignChainActivityFacebookBundle"
+    bundle_activity_twitter:
+        name: campaignchain/activity-twitter
+        description: Collection of various Twitter activities, such as tweeting and re-tweeting.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-twitter
+        class: "CampaignChain\Activity\TwitterBundle\CampaignChainActivityTwitterBundle"
+    bundle_activity_linkedin:
+        name: campaignchain/activity-linkedin
+        description: Collection of various LinkedIn activities, such as tweeting and re-tweeting.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-linkedin
+        class: "CampaignChain\Activity\LinkedInBundle\CampaignChainActivityLinkedInBundle"
+    bundle_activity_gotowebinar:
+        name: campaignchain/activity-gotowebinar
+        description: Include a Webinar into a campaign.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-gotowebinar
+        class: "CampaignChain\Activity\GoToWebinarBundle\CampaignChainActivityGoToWebinarBundle"
+    bundle_activity_mailchimp:
+        name: campaignchain/activity-mailchimp
+        description: Add upcoming newsletter campaign
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-mailchimp
+        class: "CampaignChain\Activity\MailChimpBundle\CampaignChainActivityMailChimpBundle"
+    bundle_activity_slideshare:
+        name: campaignchain/activity-slideshare
+        description: Include a slide into a campaign.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-slideshare
+        class: "CampaignChain\Activity\SlideShareBundle\CampaignChainActivitySlideShareBundle"
+    bundle_operation_facebook:
+        name: campaignchain/operation-facebook
+        description: Collection of various Facebook operations.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-facebook
+        class: "CampaignChain\Operation\FacebookBundle\CampaignChainOperationFacebookBundle"
+    bundle_operation_twitter:
+        name: campaignchain/operation-twitter
+        description: Collection of various Twitter operations.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-twitter
+        class: "CampaignChain\Operation\TwitterBundle\CampaignChainOperationTwitterBundle"
+    bundle_operation_linkedin:
+        name: campaignchain/operation-linkedin
+        description: Collection of various LinkedIn operations.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-linkedin
+        class: "CampaignChain\Operation\LinkedInBundle\CampaignChainOperationLinkedInBundle"
+    bundle_operation_gotowebinar:
+        name: campaignchain/operation-gotowebinar
+        description: Include a Webinar into a campaign.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-gotowebinar
+        class: "CampaignChain\Operation\GoToWebinarBundle\CampaignChainOperationGoToWebinarBundle"
+    bundle_operation_mailchimp:
+        name: campaignchain/operation-mailchimp
+        description: Add upcoming newsletter campaign
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-mailchimp
+        class: "CampaignChain\Operation\MailChimpBundle\CampaignChainOperationMailChimpBundle"
+    bundle_operation_slideshare:
+        name: campaignchain/operation-slideshare
+        description: Include a Webinar into a campaign.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-slideshare
+        class: "CampaignChain\Operation\SlideShareBundle\CampaignChainOperationSlideShareBundle"
+    bundle_report_analytics_cta_tracking:
+        name: campaignchain/report-analytics-cta-tracking
+        description: Shows Activities that linked to a Location and CTAs executed on that Location.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-report-analytics
+        path: vendor/campaignchain/report-analytics-cta-tracking
+        class: "CampaignChain\Report\AnalyticsCtaTrackingBundle\CampaignChainReportAnalyticsCtaTrackingBundle"
+    bundle_report_analytics_metrics_per_activity:
+        name: campaignchain/report-analytics-metrics-per-activity
+        description: Show metrics per activity.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-report-analytics
+        path: vendor/campaignchain/report-analytics-metrics-per-activity
+        class: "CampaignChain\Report\Analytics\MetricsPerActivityBundle\CampaignChainReportAnalyticsMetricsPerActivityBundle"
+    bundle_hook_due:
+        name: campaignchain/hook-due
+        description: Define the due date of an entity.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-hook
+        path: vendor/campaignchain/hook-due
+        class: "CampaignChain\Hook\DueBundle\CampaignChainHookDueBundle"
+    bundle_hook_duration:
+        name: campaignchain/hook-duration
+        description: Define the start and end date of an entity.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-hook
+        path: vendor/campaignchain/hook-duration
+        class: "CampaignChain\Hook\DurationBundle\CampaignChainHookDurationBundle"
+    bundle_hook_assignee:
+        name: campaignchain/hook-assignee
+        description: Assign a responsible user to an entity.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-hook
+        path: vendor/campaignchain/hook-assignee
+        class: "CampaignChain\Hook\AssigneeBundle\CampaignChainHookAssigneeBundle"
+    bundle_hook_timespan:
+        name: campaignchain/hook-timespan
+        description: Define the timespan of an entity.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-hook
+        path: vendor/campaignchain/hook-timespan
+        class: "CampaignChain\Hook\TimespanBundle\CampaignChainHookTimespanBundle"
+    bundle_hook_date_repeat:
+        name: campaignchain/hook-date-repeat
+        description: Define the repeating dates of an entity.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-hook
+        path: vendor/campaignchain/hook-date-repeat
+        class: "CampaignChain\Hook\DateRepeatBundle\CampaignChainHookDateRepeatBundle"
+
+\CampaignChain\CoreBundle\Entity\Hook:
+    module_config_hook_due:
+        bundle: @bundle_hook_due
+        identifier: campaignchain-due
+        label: Due
+        services:
+            form: campaignchain.hook.form.type.campaignchain.due
+            entity: campaignchain.hook.campaignchain.due
+            event_subscriber: campaignchain.hook.listener.campaignchain.due
+        type: trigger
+        entityClass: CampaignChain\Hook\DueBundle\Entity\Due
+    module_config_hook_duration:
+        bundle: @bundle_hook_duration
+        identifier: campaignchain-duration
+        label: Duration
+        services:
+            form: campaignchain.hook.form.type.campaignchain.duration
+            entity: campaignchain.hook.campaignchain.duration
+            event_subscriber: campaignchain.hook.listener.campaignchain.duration
+        type: trigger
+    module_config_hook_assignee:
+        bundle: @bundle_hook_assignee
+        identifier: campaignchain-assignee
+        label: Assignee
+        services:
+            form: campaignchain.hook.form.type.campaignchain.assignee
+            entity: campaignchain.hook.campaignchain.assignee
+        type: default
+    module_config_hook_timespan:
+        bundle: @bundle_hook_timespan
+        identifier: campaignchain-timespan
+        label: Timespan
+        services:
+            form: campaignchain.hook.form.type.campaignchain.timespan
+            entity: campaignchain.hook.campaignchain.timespan
+            event_subscriber: campaignchain.hook.listener.campaignchain.timespan
+        type: trigger
+    module_config_hook_date_repeat:
+        bundle: @bundle_hook_date_repeat
+        identifier: campaignchain-date-repeat
+        label: Repeat
+        services:
+            form: campaignchain.hook.form.type.campaignchain.date_repeat
+            entity: campaignchain.hook.campaignchain.date_repeat
+            event_subscriber: campaignchain.hook.listener.campaignchain.date_repeat
+        type: default
+
+\CampaignChain\CoreBundle\Entity\ChannelModule:
+    module_config_channel_facebook:
+        bundle: @bundle_channel_facebook
+        identifier: campaignchain-facebook
+        displayName: 'Facebook'
+        routes:
+            new: campaignchain_channel_facebook_create
+    module_config_channel_twitter:
+        bundle: @bundle_channel_twitter
+        identifier: campaignchain-twitter
+        displayName: 'Twitter'
+        routes:
+            new: campaignchain_channel_twitter_create
+    module_config_channel_linkedin:
+        bundle: @bundle_channel_linkedin
+        identifier: campaignchain-linkedin
+        displayName: 'LinkedIn'
+        routes:
+            new: campaignchain_channel_linkedin_create
+    module_config_channel_website:
+        bundle: @bundle_channel_website
+        identifier: campaignchain-website
+        displayName: 'Website'
+        routes:
+            new: campaignchain_channel_website_new
+        params:
+            cta_tracking: true
+    module_config_channel_gotowebinar:
+        bundle: @bundle_channel_citrix
+        identifier: campaignchain-gotowebinar
+        displayName: 'GoToWebinar'
+        routes:
+            new: campaignchain_channel_gotowebinar_create
+    module_config_channel_mailchimp:
+        bundle: @bundle_channel_mailchimp
+        identifier: campaignchain-mailchimp
+        description: Connects to MailChimp.
+        displayName: 'MailChimp'
+        routes:
+            new: campaignchain_channel_mailchimp_create
+    module_config_channel_slideshare:
+        bundle: @bundle_channel_slideshare
+        identifier: campaignchain-slideshare
+        description: Connects to SlideShare.
+        displayName: 'SlideShare'
+        routes:
+            new: campaignchain_channel_slideshare_create
+
+\CampaignChain\CoreBundle\Entity\LocationModule:
+    module_config_location_twitter_user:
+        bundle: @bundle_location_twitter
+        identifier: campaignchain-twitter-user
+        displayName: 'Twitter user stream'
+        hooks:
+            default:
+                campaignchain-assignee: true
+    module_config_location_twitter_status:
+        bundle: @bundle_location_twitter
+        identifier: campaignchain-twitter-status
+        displayName: 'Twitter post (aka Tweet)'
+    module_config_location_facebook_user:
+        bundle: @bundle_location_facebook
+        identifier: campaignchain-facebook-user
+        displayName: 'Facebook user stream'
+        hooks:
+            default:
+                campaignchain-assignee: true
+    module_config_location_facebook_page:
+        bundle: @bundle_location_facebook
+        identifier: campaignchain-facebook-page
+        displayName: 'Facebook page stream'
+        hooks:
+            default:
+                campaignchain-assignee: true
+    module_config_location_facebook_status:
+        bundle: @bundle_location_facebook
+        identifier: campaignchain-facebook-status
+        displayName: 'Facebook status'
+    module_config_location_linkedin_user:
+        bundle: @bundle_location_linkedin
+        identifier: campaignchain-linkedin-user
+        displayName: 'LinkedIn user stream'
+    module_config_location_website:
+        bundle: @bundle_location_website
+        identifier: campaignchain-website
+        displayName: 'Website'
+        services:
+            job_cta: campaignchain.location.website.job.cta
+    module_config_location_website_page:
+        bundle: @bundle_location_website
+        identifier: campaignchain-website-page
+        displayName: 'Website page'
+    module_config_location_citrix_user:
+        bundle: @bundle_location_citrix
+        identifier: campaignchain-citrix-user
+        displayName: 'Citrix user'
+    module_config_location_gotowebinar:
+        bundle: @bundle_location_citrix
+        identifier: campaignchain-gotowebinar
+        displayName: 'GoToWebinar'
+    module_config_location_mailchimp_user:
+        bundle: @bundle_location_mailchimp
+        identifier: campaignchain-mailchimp-user
+        displayName: 'MailChimp user'
+        description: MailChimp account owner.
+    module_config_location_mailchimp_newsletter:
+        bundle: @bundle_location_mailchimp
+        identifier: campaignchain-mailchimp-newsletter
+        displayName: 'MailChimp newsletter'
+        description: The Location of a MailChimp email campaign.
+    module_config_location_slideshare_user:
+        bundle: @bundle_location_slideshare
+        identifier: campaignchain-slideshare-user
+        displayName: 'SlideShare'
+        description: Holds information about a SlideShare user.
+
+\CampaignChain\CoreBundle\Entity\CampaignModule:
+    module_config_campaign_scheduled:
+        bundle: @bundle_campaign_scheduled
+        identifier: campaignchain-scheduled
+        displayName: 'Scheduled Campaign'
+        description: A campaign with a start and end date. All related Activities and Milestones will be executed and related metrics collected while the Scheduled Campaign runs.
+        routes:
+            new: campaignchain_campaign_scheduled_new
+            edit: campaignchain_campaign_scheduled_edit
+            edit_modal: campaignchain_campaign_scheduled_edit_modal
+            edit_api: campaignchain_campaign_scheduled_edit_api
+            plan: campaignchain_campaign_scheduled_plan_timeline
+            plan_detail: campaignchain_campaign_scheduled_plan_timeline_detail
+            copy: campaignchain_campaign_scheduled_copy
+        hooks:
+            default:
+                campaignchain-duration: true
+                campaignchain-assignee: true
+            copy:
+                campaignchain-due: true
+                campaignchain-assignee: true
+    module_config_campaign_template:
+        bundle: @bundle_campaign_template
+        identifier: campaignchain-template
+        displayName: 'Campaign Template'
+        description: Create re-usable templates of campaigns with pre-defined Activities and Milestones. You could then convert it into a Scheduled Campaign whenever you want to have the Campaign Template executed from a certain date onwards.
+        services:
+            hook: campaignchain.campaign.template.hook
+        routes:
+            new: campaignchain_campaign_template_new
+            edit: campaignchain_campaign_template_edit
+            edit_modal: campaignchain_campaign_template_edit_modal
+            edit_api: campaignchain_campaign_template_edit_api
+            plan: campaignchain_campaign_template
+            plan_detail: campaignchain_campaign_template_plan_timeline_detail
+            plan_detail_fullscreen: campaignchain_campaign_template_plan_timeline_detail_fullscreen
+            copy: campaignchain_campaign_template_copy
+        hooks:
+            default:
+                campaignchain-timespan: true
+    module_config_campaign_repeating:
+        bundle: @bundle_campaign_repeating
+        identifier: campaignchain-repeating
+        displayName: 'Repeating Campaign'
+        description: A campaign that is being repeated automatically. For example, a campaign that runs for 30 days and is being repeated every first day of a month.
+        routes:
+            new: campaignchain_campaign_repeating_new
+            edit: campaignchain_campaign_repeating_edit
+            edit_modal: campaignchain_campaign_repeating_edit_modal
+            edit_api: campaignchain_campaign_repeating_edit_api
+            plan: campaignchain_campaign_repeating_plan
+            plan_detail: campaignchain_campaign_repeating_plan_timeline_detail
+            plan_detail_fullscreen: campaignchain_campaign_repeating_plan_timeline_detail_fullscreen
+            copy: campaignchain_campaign_repeating_copy
+        hooks:
+            default:
+                campaignchain-timespan: true
+                campaignchain-date-repeat: true
+        services:
+            job: campaignchain.job.campaign.repeating
+
+\CampaignChain\CoreBundle\Entity\CampaignModuleConversion:
+    module_conversion_template_to_template:
+            from: @module_config_campaign_template
+            to: @module_config_campaign_template
+    module_conversion_template_to_scheduled:
+        from: @module_config_campaign_template
+        to: @module_config_campaign_scheduled
+    module_conversion_template_to_repeating:
+        from: @module_config_campaign_template
+        to: @module_config_campaign_repeating
+    module_conversion_scheduled_to_scheduled:
+        from: @module_config_campaign_scheduled
+        to: @module_config_campaign_scheduled
+    module_conversion_scheduled_to_template:
+        from: @module_config_campaign_scheduled
+        to: @module_config_campaign_template
+    module_conversion_scheduled_to_repeating:
+        from: @module_config_campaign_scheduled
+        to: @module_config_campaign_repeating
+    module_conversion_repeating_to_repeating:
+        from: @module_config_campaign_repeating
+        to: @module_config_campaign_repeating
+    module_conversion_repeating_to_scheduled:
+        from: @module_config_campaign_repeating
+        to: @module_config_campaign_scheduled
+    module_conversion_repeating_to_template:
+        from: @module_config_campaign_repeating
+        to: @module_config_campaign_template
+
+\CampaignChain\CoreBundle\Entity\MilestoneModule:
+    module_config_milestone_scheduled:
+        bundle: @bundle_milestone_scheduled
+        identifier: campaignchain-scheduled
+        displayName: 'Scheduled Milestone'
+        routes:
+            new: campaignchain_milestone_scheduled_new
+            edit: campaignchain_milestone_scheduled_edit
+            edit_modal: campaignchain_milestone_scheduled_edit_modal
+            edit_api: campaignchain_milestone_scheduled_edit_api
+        hooks:
+            default:
+                campaignchain-due: true
+                campaignchain-assignee: true
+
+\CampaignChain\CoreBundle\Entity\ActivityModule:
+    module_config_activity_facebook:
+        bundle: @bundle_activity_facebook
+        channelModules:
+            - @module_config_channel_facebook
+        identifier: campaignchain-facebook-publish-status
+        displayName: 'Publish Status'
+        routes:
+            new: campaignchain_activity_facebook_publish_status_new
+            edit: campaignchain_activity_facebook_publish_status_edit
+            edit_modal: campaignchain_activity_facebook_publish_status_edit_modal
+            edit_api: campaignchain_activity_facebook_publish_status_edit_api
+            read: campaignchain_activity_facebook_publish_status_read
+        hooks:
+            default:
+                campaignchain-due: true
+                campaignchain-assignee: true
+    module_config_activity_twitter:
+        bundle: @bundle_activity_twitter
+        channelModules:
+            - @module_config_channel_twitter
+        identifier: campaignchain-twitter-update-status
+        displayName: 'Update Status'
+        routes:
+            new: campaignchain_activity_twitter_update_status_new
+            edit: campaignchain_activity_twitter_update_status_edit
+            edit_modal: campaignchain_activity_twitter_update_status_edit_modal
+            edit_api: campaignchain_activity_twitter_update_status_edit_api
+            read: campaignchain_activity_twitter_update_status_read
+        hooks:
+            default:
+                campaignchain-due: true
+                campaignchain-assignee: true
+    module_config_activity_linkedin:
+        bundle: @bundle_activity_linkedin
+        channelModules:
+            - @module_config_channel_linkedin
+        identifier: campaignchain-linkedin-share-news-item
+        displayName: 'Share News'
+        routes:
+            new: campaignchain_activity_linkedin_share_news_item_new
+            edit: campaignchain_activity_linkedin_share_news_item_edit
+            edit_modal: campaignchain_activity_linkedin_share_news_item_edit_modal
+            edit_api: campaignchain_activity_linkedin_share_news_item_edit_api
+            read: campaignchain_activity_linkedin_share_news_item_read
+        hooks:
+            default:
+                campaignchain-due: true
+    module_config_activity_gotowebinar:
+        bundle: @bundle_activity_gotowebinar
+        channelModules:
+            - @module_config_channel_gotowebinar
+        identifier: campaignchain-gotowebinar
+        displayName: 'Add an upcoming Webinar'
+        routes:
+            new: campaignchain_activity_gotowebinar_new
+            edit: campaignchain_activity_gotowebinar_edit
+            edit_modal: campaignchain_activity_gotowebinar_edit_modal
+            edit_api:
+            read: campaignchain_activity_gotowebinar_read
+        hooks:
+            default:
+                campaignchain-assignee: true
+    module_config_activity_mailchimp:
+        bundle: @bundle_activity_mailchimp
+        channelModules:
+            - @module_config_channel_mailchimp
+        identifier: campaignchain-mailchimp
+        displayName: Add upcoming newsletter campaign
+        routes:
+            new: campaignchain_activity_mailchimp_new
+            edit: campaignchain_activity_mailchimp_edit
+            edit_modal: campaignchain_activity_mailchimp_edit_modal
+            edit_api: campaignchain_activity_mailchimp_edit_api
+            read: campaignchain_activity_mailchimp_read
+        hooks:
+            default:
+                campaignchain-due: true
+                campaignchain-assignee: true
+    module_config_activity_slideshare:
+        bundle: @bundle_activity_slideshare
+        channelModules:
+            - @module_config_channel_slideshare
+        identifier: campaignchain-slideshare
+        displayName: 'Schedule private slideshow'
+        routes:
+            new: campaignchain_activity_slideshare_new
+            edit: campaignchain_activity_slideshare_edit
+            edit_modal: campaignchain_activity_slideshare_edit_modal
+            edit_api: campaignchain_activity_slideshare_edit_api
+            read: campaignchain_activity_slideshare_read
+        hooks:
+            default:
+                campaignchain-due: true
+            
+\CampaignChain\CoreBundle\Entity\OperationModule:
+    module_config_operation_facebook:
+        bundle: @bundle_operation_facebook
+        identifier: campaignchain-facebook-publish-status
+        displayName: 'Publish Status'
+        params:
+            owns_location: true
+        services:
+            operation: campaignchain.operation.facebook.status
+            job: campaignchain.job.operation.facebook.publish_status
+            report: campaignchain.job.report.facebook.publish_status
+    module_config_operation_twitter:
+        bundle: @bundle_operation_twitter
+        identifier: campaignchain-twitter-update-status
+        displayName: 'Update Status'
+        params:
+            owns_location: true
+        services:
+            operation: campaignchain.operation.twitter.status
+            job: campaignchain.job.operation.twitter.update_status
+            report: campaignchain.job.report.twitter.update_status
+    module_config_operation_linkedin:
+        bundle: @bundle_operation_linkedin
+        identifier: campaignchain-linkedin-share-news-item
+        displayName: 'Share News'
+        params:
+            owns_location: true
+        services:
+            operation: campaignchain.operation.linkedin.news_item
+            job: campaignchain.job.operation.linkedin.share_news_item
+            report: campaignchain.job.report.linkedin.share_news_item
+    module_config_operation_gotowebinar:
+        bundle: @bundle_operation_gotowebinar
+        identifier: campaignchain-gotowebinar
+        displayName: 'Include a Webinar'
+        params:
+            owns_location: true
+        services:
+            operation: campaignchain.operation.gotowebinar.webinar
+            report: campaignchain.job.report.gotowebinar
+    module_config_operation_mailchimp:
+        bundle: @bundle_operation_mailchimp
+        identifier: campaignchain-mailchimp-newsletter
+        displayName: Add upcoming newsletter campaign
+        services:
+            job: campaignchain.job.operation.mailchimp.newsletter
+            report: campaignchain.job.report.mailchimp.newsletter
+        params:
+            owns_location: true
+    module_config_operation_slideshare:
+        bundle: @bundle_operation_slideshare
+        identifier: campaignchain-slideshare
+        displayName: 'Schedule private slideshow'
+        description: This module shedules a slideshow previously-uploaded on SlideShare
+        services:
+            job: campaignchain.job.operation.slideshare.publish_slideshow
+            report: campaignchain.job.report.slideshare.publish_slideshow
+        params:
+            owns_location: true
+            
+\CampaignChain\CoreBundle\Entity\ReportModule:
+    module_config_cta_tracking_per_location:
+        identifier: campaignchain-analytics-cta-tracking-per-location
+        displayName: CTAs per Location
+        description: Shows Activities that linked to a Location and CTAs executed on that Location.
+        bundle: @bundle_report_analytics_cta_tracking
+        routes:
+            index: campaignchain_analytics_cta_tracking_per_location_index
+    module_config_metrics_per_activity:
+        identifier: campaignchain-metrics-per-activity
+        displayName: Metrics Per Activity
+        description: This report displays charts of statistics collected per activity.
+        bundle: @bundle_report_analytics_metrics_per_activity
+        routes:
+            index: campaignchain_report_analytics_metrics_per_activity_index

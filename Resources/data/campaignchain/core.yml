@@ -1,0 +1,575 @@
+\CampaignChain\CoreBundle\Entity\System:
+    system:
+        name: CampaignChain Community Edition
+        version: dev-master
+        logo: /bundles/campaignchaindistributionce/images/logo.png
+        icon: /bundles/campaignchaindistributionce/images/icon.png
+        currency: USD
+        homepage: http://www.campaignchain.com
+        modules:
+            repositories:
+                    - http://store.campaignchain.com/modules/
+            repositories-dev:
+                - http://store.campaignchain.com/modules/dev/
+
+# Password is "test" for all sample users
+\CampaignChain\CoreBundle\Entity\User:
+    fos_user_user:
+        username: admin
+        usernameCanonical: admin
+        email: admin@example.com
+        emailCanonical: admin@example.com
+        firstName: <firstName()>
+        lastName: <lastName()>
+        enabled: 1
+        salt: 2fhwi8a972zo4ocosgssgkksg0wc08g
+        password: AwxsWxSyOAEC0whc2d67Jd3ktUBf6REZmwkWJgo9ucMbjV57CQCT6S6cmue54qJ0QOkEDqfMH3++Kw1LtAcz8Q==
+        roles: [ROLE_SUPER_ADMIN]
+    fos_user_user{1..5}:
+        username: user<current()>
+        usernameCanonical: user<current()>
+        email: user<current()>@example.com
+        emailCanonical: user<current()>@example.com
+        firstName: <firstName()>
+        lastName: <lastName()>
+        enabled: 1
+        salt: 2fhwi8a972zo4ocosgssgkksg0wc08g
+        password: AwxsWxSyOAEC0whc2d67Jd3ktUBf6REZmwkWJgo9ucMbjV57CQCT6S6cmue54qJ0QOkEDqfMH3++Kw1LtAcz8Q==
+        roles: [ROLE_ADMIN]
+        timezone: <timezone()>
+
+\CampaignChain\CoreBundle\Entity\Campaign:
+    campaign1:
+        name: Campaign 1
+        timezone: <timezone()>
+        campaignModule: @module_config_campaign_scheduled
+        triggerHook: @module_config_hook_duration
+        startDate: <dateTimeBetween('1 year ago', '11 months ago')>
+        endDate: <dateTimeBetween('4 months ago', '3 months ago')>
+        status: closed
+        assignee: @fos_user_user*
+    campaign2:
+        name: Campaign 2
+        timezone: <timezone()>
+        campaignModule: @module_config_campaign_scheduled
+        triggerHook: @module_config_hook_duration
+        startDate: <dateTimeBetween('6 months ago', '5 months ago')>
+        endDate: <dateTimeBetween('+14 days', '+1 month')>
+        status: open
+        assignee: @fos_user_user*
+    campaign3:
+        name: Campaign 3
+        timezone: <timezone()>
+        campaignModule: @module_config_campaign_scheduled
+        triggerHook: @module_config_hook_duration
+        startDate: <dateTimeBetween('2 months ago', '1 month ago')>
+        endDate: <dateTimeBetween('+4 months', '+5 months')>
+        status: open
+        assignee: @fos_user_user*
+    campaign4:
+        name: Campaign 4
+        timezone: <timezone()>
+        campaignModule: @module_config_campaign_scheduled
+        triggerHook: @module_config_hook_duration
+        startDate: <dateTimeBetween('+2 weeks', '+4 weeks')>
+        endDate: <dateTimeBetween('+4 months', '+5 months')>
+        status: open
+        assignee: @fos_user_user*
+    campaign5:
+        name: Campaign 5
+        timezone: <timezone()>
+        campaignModule: @module_config_campaign_scheduled
+        triggerHook: @module_config_hook_duration
+        startDate: <dateTimeBetween('+5 months', '+6 months')>
+        endDate: <dateTimeBetween('+11 months', '+12 months')>
+        status: open
+        assignee: @fos_user_user*
+    campaign_template1:
+        name: Campaign Template 1
+        timezone: <timezone()>
+        campaignModule: @module_config_campaign_template
+        triggerHook: @module_config_hook_timespan
+        hasRelativeDates: true
+        startDate: <(new \DateTime('2012-01-01 00:00:00'))>
+        endDate: <(new \DateTime('2012-08-01 00:00:00'))>
+        status: paused
+        assignee: @fos_user_user*
+    campaign_repeating1:
+        name: Campaign Repeating 1
+        timezone: <timezone()>
+        campaignModule: @module_config_campaign_repeating
+        triggerHook: @module_config_hook_date_repeat
+        hasRelativeDates: true
+        startDate: <(new \DateTime('2012-01-01 00:00:00'))>
+        endDate: <(new \DateTime('2012-01-11 00:00:00'))>
+        status: paused
+        interval: Next Mon +2 weeks
+        intervalStartDate: <(new \DateTime('2015-07-08 08:09:00'))>
+        intervalNextRun: <(new \DateTime('2015-07-27 08:09:00'))>
+        assignee: @fos_user_user*
+
+\CampaignChain\CoreBundle\Entity\Milestone:
+    milestone{1..3}:
+        name: Milestone <current()>
+        campaign: @campaign1
+        milestoneModule: @module_config_milestone_scheduled
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+        status: closed
+        assignee: @fos_user_user*
+    milestone{4..6}:
+        name: Milestone <current()>
+        campaign: @campaign2
+        milestoneModule: @module_config_milestone_scheduled
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    milestone{7..9}:
+        name: Milestone <current()>
+        campaign: @campaign3
+        milestoneModule: @module_config_milestone_scheduled
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    milestone{10..12}:
+        name: Milestone <current()>
+        campaign: @campaign4
+        milestoneModule: @module_config_milestone_scheduled
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    milestone{13..15}:
+        name: Milestone <current()>
+        campaign: @campaign_template1
+        milestoneModule: @module_config_milestone_scheduled
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_template1->startDate, @campaign_template1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+    milestone{16..18}:
+        name: Milestone <current()>
+        campaign: @campaign_repeating1
+        milestoneModule: @module_config_milestone_scheduled
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_repeating1->startDate, @campaign_repeating1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+# Campaign 5 to be left without milestones
+
+\CampaignChain\CoreBundle\Entity\Channel:
+    channel_facebook:
+        name: CampaignChain Test 1
+        channelModule: @module_config_channel_facebook
+        status: active
+        trackingId: <md5()>
+    channel_twitter:
+        name: CampaignChain Test 1
+        channelModule: @module_config_channel_twitter
+        status: active
+        trackingId: <md5()>
+    channel_linkedin:
+        name: CampaignChain Test 1
+        channelModule: @module_config_channel_linkedin
+        status: active
+        trackingId: <md5()>
+    channel_website:
+        name: Amariki | WordPress Test Site for CampaignChain
+        channelModule: @module_config_channel_website
+        status: active
+        trackingId: b982b267f991e731a7453fe839a6e70d
+    channel_gotowebinar:
+        name: Amariki Webinars
+        channelModule: @module_config_channel_gotowebinar
+        status: active
+        trackingId: cb9904035e73f3b3779a8894cae18f6d
+    channel_mailchimp:
+        name: Amariki Software
+        channelModule: @module_config_channel_mailchimp
+        status: active
+        trackingId: b0f982b2945c9eabafe70b9da30596cc
+    channel_slideshare:
+        name: amariki_test
+        channelModule: @module_config_channel_slideshare
+        status: active
+        trackingId: 3d6704ebc3842c95f656bc5eb2c96e70
+
+\CampaignChain\CoreBundle\Entity\Location:
+    location_facebook_user1:
+        name: Amariki Test One
+        identifier: 100008922632416
+        image: https://graph.facebook.com/100008922632416/picture?width=150&height=150
+        locationModule: @module_config_location_facebook_user
+        channel: @channel_facebook
+        status: active
+        URL: https://www.facebook.com/profile.php?id=100008922632416
+    location_facebook_page:
+        name: Amariki
+        identifier: 1384145015223372
+        image: https://fbcdn-profile-a.akamaihd.net/static-ak/rsrc.php/v2/y9/r/zesEb_o5oyL.png
+        locationModule: @module_config_location_facebook_page
+        channel: @channel_facebook
+        status: active
+        URL: https://www.facebook.com/pages/Amariki/1384145015223372
+    location_twitter:
+        name: Amariki Test 1
+        identifier: 2478111480
+        image: http://abs.twimg.com/sticky/default_profile_images/default_profile_5.png
+        locationModule: @module_config_location_twitter_user
+        channel: @channel_twitter
+        status: active
+        URL: http://twitter.com/AmarikiTest1
+    location_linkedin:
+        name: Amariki Software
+        image: /bundles/campaignchainchannellinkedin/ghost_person.png
+        identifier: idW8ynCjb7
+        channel: @channel_linkedin
+        locationModule: @module_config_location_linkedin_user
+        status: active
+        URL: https://www.linkedin.com/pub/amariki-software/a1/455/616
+    location_website:
+        name: Amariki | WordPress Test Site for CampaignChain
+        channel: @channel_website
+        locationModule: @module_config_location_website
+        status: active
+        URL: http://wordpress.amariki.com
+    location_facebook_user2:
+        name: Amariki Test Two
+        identifier: 100008874400259
+        image: https://graph.facebook.com/100008874400259/picture?width=150&height=150
+        locationModule: @module_config_location_facebook_user
+        channel: @channel_facebook
+        status: active
+        URL: https://www.facebook.com/profile.php?id=100008874400259
+    location_citrix:
+        name: Amariki Webinars
+        identifier: 5484354468050484741
+        locationModule: @module_config_location_citrix_user
+        channel: @channel_gotowebinar
+        status: active
+        URL: https://global.gotowebinar.com/webinars.tmpl
+    location_mailchimp:
+        name: Amariki Software
+        identifier: 38978934
+        image: https://secure.gravatar.com/avatar/5851b55378d87459c61817edbc6768e0.jpg?s=300&d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fa.png
+        locationModule: @module_config_location_mailchimp_user
+        channel: @channel_mailchimp
+        status: active
+    location_slideshare:
+        name: amariki_test
+        locationModule: @module_config_location_slideshare_user
+        image: http://public.slidesharecdn.com/b/images/user-96x96.png
+        channel: @channel_slideshare
+        status: active
+        URL: http://www.slideshare.net/amariki_test
+
+\CampaignChain\Location\FacebookBundle\Entity\User:
+    location_facebook_user_user1:
+        location: @location_facebook_user1
+        identifier: 100008922632416
+        displayName: Amariki Test One
+        firstName: Amariki
+        lastName: Test One
+        gender: female
+        email: campaignchain-test1@groganz.com
+        emailVerified: campaignchain-test1@groganz.com
+        profileUrl: https://www.facebook.com/profile.php?id=100008922632416
+        profileImageUrl: https://graph.facebook.com/100008922632416/picture?width=150&height=150
+        coverInfoUrl: https://graph.facebook.com/100008922632416?fields=cover
+        scope: public_profile, user_friends, email, user_about_me, user_activities, user_events, user_likes, user_photos, user_status, user_videos, user_website, publish_actions, manage_pages
+    location_facebook_user_user2:
+        location: @location_facebook_user2
+        identifier: 100008874400259
+        displayName: Amariki Test Two
+        firstName: Amariki
+        lastName: Test Two
+        gender: female
+        email: campaignchain-test1@groganz.com
+        emailVerified: campaignchain-test1@groganz.com
+        profileUrl: https://www.facebook.com/profile.php?id=100008874400259
+        profileImageUrl: https://graph.facebook.com/100008874400259/picture?width=150&height=150
+        coverInfoUrl: https://graph.facebook.com/100008874400259?fields=cover
+        scope: public_profile, user_friends, email, user_about_me, user_activities, user_events, user_likes, user_photos, user_status, user_videos, user_website, publish_actions, manage_pages
+        pages:
+            - @location_facebook_page1
+
+\CampaignChain\Location\FacebookBundle\Entity\Page:
+    location_facebook_page1:
+        location: @location_facebook_page
+        identifier: 1384145015223372
+        name: Amariki
+        category: Organization
+        about: Amariki is a test company.
+        link: https://www.facebook.com/pages/Amariki/1384145015223372
+        pictureUrl: https://fbcdn-profile-a.akamaihd.net/static-ak/rsrc.php/v2/y9/r/zesEb_o5oyL.png
+        isPublished: true
+        canPost: true
+        permissions:
+            - ADMINISTER
+            - EDIT_PROFILE
+            - CREATE_CONTENT
+            - MODERATE_CONTENT
+            - CREATE_ADS
+            - BASIC_ADMIN
+        users:
+            - @location_facebook_user_user2
+
+\CampaignChain\Location\TwitterBundle\Entity\TwitterUser:
+    location_twitter_user1:
+        location: @location_twitter
+        username: AmarikiTest1
+        identifier: 2478111480
+        displayName: Amariki
+        profileUrl: http://twitter.com/AmarikiTest1
+        profileImageUrl: http://abs.twimg.com/sticky/default_profile_images/default_profile_5.png
+
+\CampaignChain\Location\LinkedInBundle\Entity\LinkedInUser:
+    location_linkedin_user1:
+        location: @location_linkedin
+        identifier: 362412594
+        displayName: CampaignChain Software LinkedIn
+        profileUrl: http://www.linkedin.com/profile/view?id=362412594
+        profileImageUrl: https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_65x65_v1.png
+
+\CampaignChain\Location\CitrixBundle\Entity\CitrixUser:
+    location_citrix_user1:
+        location: @location_citrix
+        identifier: 5484354468050484741
+        displayName: Amariki Webinars
+        firstName: Amariki
+        email: amariki@groganz.com
+
+\CampaignChain\Location\MailChimpBundle\Entity\MailChimpUser:
+    location_mailchimp_user1:
+        location: @location_mailchimp
+        identifier: 38978934
+        username: amariki
+        displayName: Amariki Software
+        firstName: Amariki
+        lastName: Software
+        email: amariki@groganz.com
+        websiteUrl: http://www.amariki.com
+        profileImageUrl: https://secure.gravatar.com/avatar/5851b55378d87459c61817edbc6768e0.jpg?s=300&d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fa.png
+
+\CampaignChain\Location\SlideShareBundle\Entity\SlideShareUser:
+    location_slideshare_user1:
+        location: @location_slideshare
+        identifier: amariki_test
+        displayName: amariki_test
+        password: amar1k1
+
+\CampaignChain\CoreBundle\Entity\Activity:
+    # GoToWebinar
+    activity_gotowebinar1:
+        name: "What's new in Amariki?"
+        campaign: @campaign3
+        channel: @channel_gotowebinar
+        location: @location_citrix
+        equalsOperation: true
+        activityModule: @module_config_activity_gotowebinar
+        triggerHook: @module_config_hook_duration
+        startDate: <dateTimeBetween('now', @campaign3->endDate)>
+        endDate: <dateTimeBetween('now', @campaign3->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # Facebook Status Update
+    activity_facebook{1..5}:
+        name: Announcement <current()> on Facebook
+        campaign: @campaign1
+        channel: @channel_facebook
+        location: @location_facebook_user1
+        activityModule: @module_config_activity_facebook
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+        status: closed
+        assignee: @fos_user_user*
+    # Twitter Status Update
+    activity_twitter{1..5}:
+        name: Announcement <current()> on Twitter
+        campaign: @campaign1
+        channel: @channel_twitter
+        location: @location_twitter
+        activityModule: @module_config_activity_twitter
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+        status: closed
+        assignee: @fos_user_user*
+    # LinkedIn News
+    activity_linkedin{1..5}:
+        name: Announcement <current()> on LinkedIn
+        campaign: @campaign1
+        channel: @channel_linkedin
+        location: @location_linkedin
+        activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+        status: closed
+        assignee: @fos_user_user*
+    # Facebook Status Update
+    activity_facebook{6..10}:
+        name: Announcement <current()> on Facebook
+        campaign: @campaign2
+        channel: @channel_facebook
+        location: @location_facebook_user1
+        activityModule: @module_config_activity_facebook
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # Twitter Status Update
+    activity_twitter{6..10}:
+        name: Announcement <current()> on Twitter
+        campaign: @campaign2
+        channel: @channel_twitter
+        location: @location_twitter
+        activityModule: @module_config_activity_twitter
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # LinkedIn News
+    activity_linkedin{6..10}:
+        name: Announcement <current()> on LinkedIn
+        campaign: @campaign2
+        channel: @channel_linkedin
+        location: @location_linkedin
+        activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # Facebook Status Update
+    activity_facebook{11..15}:
+        name: Announcement <current()> on Facebook
+        campaign: @campaign3
+        channel: @channel_facebook
+        location: @location_facebook_user1
+        activityModule: @module_config_activity_facebook
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # Twitter Status Update
+    activity_twitter{11..15}:
+        name: Announcement <current()> on Twitter
+        campaign: @campaign3
+        channel: @channel_twitter
+        location: @location_twitter
+        activityModule: @module_config_activity_twitter
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # LinkedIn News
+    activity_linkedin{11..15}:
+        name: Announcement <current()> on LinkedIn
+        campaign: @campaign3
+        channel: @channel_linkedin
+        location: @location_linkedin
+        activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # Facebook Status Update
+    activity_facebook{16..20}:
+        name: Announcement <current()> on Facebook
+        campaign: @campaign4
+        channel: @channel_facebook
+        location: @location_facebook_user1
+        activityModule: @module_config_activity_facebook
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # Twitter Status Update
+    activity_twitter{16..20}:
+        name: Announcement <current()> on Twitter
+        campaign: @campaign4
+        channel: @channel_twitter
+        location: @location_twitter
+        activityModule: @module_config_activity_twitter
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # LinkedIn News
+    activity_linkedin{16..20}:
+        name: Announcement <current()> on LinkedIn
+        campaign: @campaign4
+        channel: @channel_linkedin
+        location: @location_linkedin
+        activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # Facebook Status Update
+    activity_facebook{21..25}:
+        name: Announcement <current()> on Facebook
+        campaign: @campaign_template1
+        channel: @channel_facebook
+        location: @location_facebook_user1
+        activityModule: @module_config_activity_facebook
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_template1->startDate, @campaign_template1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+    # Twitter Status Update
+    activity_twitter{21..25}:
+        name: Announcement <current()> on Twitter
+        campaign: @campaign_template1
+        channel: @channel_twitter
+        location: @location_twitter
+        activityModule: @module_config_activity_twitter
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_template1->startDate, @campaign_template1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+    # LinkedIn News
+    activity_linkedin{21..25}:
+        name: Announcement <current()> on LinkedIn
+        campaign: @campaign_template1
+        channel: @channel_linkedin
+        location: @location_linkedin
+        activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_template1->startDate, @campaign_template1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+    # Facebook Status Update
+    activity_facebook{26..30}:
+        name: Announcement <current()> on Facebook
+        campaign: @campaign_repeating1
+        channel: @channel_facebook
+        location: @location_facebook_user1
+        activityModule: @module_config_activity_facebook
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_repeating1->startDate, @campaign_repeating1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+    # Twitter Status Update
+    activity_twitter{26..30}:
+        name: Announcement <current()> on Twitter
+        campaign: @campaign_repeating1
+        channel: @channel_twitter
+        location: @location_twitter
+        activityModule: @module_config_activity_twitter
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_repeating1->startDate, @campaign_repeating1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+    # LinkedIn News
+    activity_linkedin{26..30}:
+        name: Announcement <current()> on LinkedIn
+        campaign: @campaign_repeating1
+        channel: @channel_linkedin
+        location: @location_linkedin
+        activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_repeating1->startDate, @campaign_repeating1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+# Campaign 5 to be left without activities

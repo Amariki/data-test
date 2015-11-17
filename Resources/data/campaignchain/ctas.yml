@@ -1,0 +1,260 @@
+\CampaignChain\CoreBundle\Entity\Location:
+    location_facebook_operation1:
+        parent: @location_facebook_user1
+        operation: @operation_facebook1
+        identifier: <md5()>
+        url: https://www.facebook.com/permalink.php?story_fbid=xxx&id=yyy
+        name: @activity_facebook1->name
+        locationModule: @module_config_location_facebook_user
+    location_twitter_operation1:
+        parent: @location_twitter
+        operation: @operation_twitter1
+        identifier: <md5()>
+        url: https://twitter.com/AmarikiTest1/status/xxx
+        name: @activity_twitter1->name
+        locationModule: @module_config_location_twitter_status
+    location_linkedin_operation1:
+        parent: @location_linkedin
+        operation: @operation_linkedin1
+        identifier: <md5()>
+        url: https://www.linkedin.com/nhome/updates?topic=xxx
+        name: @activity_linkedin1->name
+        locationModule: @module_config_location_linkedin_user
+    location_amariki_com1:
+        channel: @channel_website
+        parent: @location_website
+        operation: @operation_facebook1
+        url: http://wordpress.amariki.com/?m=201502/
+        name: "February | 2015 | Amariki"
+        image: /bundles/campaignchainlocationwebsite/images/icons/256x256/page.png
+        locationModule: @module_config_location_website_page
+    location_amariki_com2:
+        channel: @channel_website
+        parent: @location_website
+        operation: @operation_facebook1
+        url: http://wordpress.amariki.com/?p=1
+        name: "Hello world! | Amariki"
+        image: /bundles/campaignchainlocationwebsite/images/icons/256x256/page.png
+        locationModule: @module_config_location_website_page
+    location_amariki_com3:
+        channel: @channel_website
+        parent: @location_website
+        operation: @operation_facebook1
+        url: http://wordpress.amariki.com/?author=1
+        name: "amariki | Amariki"
+        image: /bundles/campaignchainlocationwebsite/images/icons/256x256/page.png
+        locationModule: @module_config_location_website_page
+
+\CampaignChain\CoreBundle\Entity\CTA:
+    cta_facebook1:
+        operation: @operation_facebook1
+        location: @location_website
+        url: http://wordpress.amariki.com/
+        trackingId: <md5()>
+    cta_twitter1:
+        operation: @operation_twitter1
+        location: @location_twitter
+        url: http://wordpress.amariki.com/
+        trackingId: <md5()>
+    cta_linkedin1:
+        operation: @operation_linkedin1
+        location: @location_linkedin
+        url: http://wordpress.amariki.com/
+        trackingId: <md5()>
+
+\CampaignChain\CoreBundle\Entity\ReportCTA:
+
+    # Facebook
+
+    # Inbound from Operation to Location
+    report_cta_facebook{1..120}:
+        cta: @cta_facebook1
+        operation: @operation_facebook1
+        activity: @activity_facebook1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_facebook_operation1
+        referrerUrl: @location_facebook_operation1->url
+        referrerName: @activity_facebook1->name
+        sourceLocation: @location_facebook_operation1
+        sourceUrl: @location_facebook_operation1->url
+        sourceName: @activity_facebook1->name
+        targetLocation: @location_website
+        targetUrl: @location_website->url
+        targetName: @location_website->name
+    # Outbound from CTA's Location to Location inside Channel
+    report_cta_facebook_amariki_com1{1..27}:
+        cta: @cta_facebook1
+        operation: @operation_facebook1
+        activity: @activity_facebook1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_facebook_operation1
+        referrerUrl: @location_facebook_operation1->url
+        referrerName: @activity_facebook1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com1
+        targetUrl: @location_amariki_com1->url
+        targetName: @location_amariki_com1->name
+    report_cta_facebook_amariki_com2{1..33}:
+        cta: @cta_facebook1
+        operation: @operation_facebook1
+        activity: @activity_facebook1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_facebook_operation1
+        referrerUrl: @location_facebook_operation1->url
+        referrerName: @activity_facebook1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com2
+        targetUrl: @location_amariki_com2->url
+        targetName: @location_amariki_com2->name
+    report_cta_facebook_amariki_com3{1..14}:
+        cta: @cta_facebook1
+        operation: @operation_facebook1
+        activity: @activity_facebook1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_facebook_operation1
+        referrerUrl: @location_facebook_operation1->url
+        referrerName: @activity_facebook1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com3
+        targetUrl: @location_amariki_com3->url
+        targetName: @location_amariki_com3->name
+
+    # Twitter
+
+    # Inbound from Operation to Location
+    report_cta_twitter{1..221}:
+        cta: @cta_twitter1
+        operation: @operation_twitter1
+        activity: @activity_twitter1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_twitter_operation1
+        referrerUrl: @location_twitter_operation1->url
+        referrerName: @activity_twitter1->name
+        sourceLocation: @location_twitter_operation1
+        sourceUrl: @location_twitter_operation1->url
+        sourceName: @activity_twitter1->name
+        targetLocation: @location_website
+        targetUrl: @location_website->url
+        targetName: @location_website->name
+    # Outbound from CTA's Location to Location inside Channel
+    report_cta_twitter_amariki_com1{1..65}:
+        cta: @cta_twitter1
+        operation: @operation_twitter1
+        activity: @activity_twitter1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_twitter_operation1
+        referrerUrl: @location_twitter_operation1->url
+        referrerName: @activity_twitter1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com1
+        targetUrl: @location_amariki_com1->url
+        targetName: @location_amariki_com1->name
+    report_cta_twitter_amariki_com2{1..11}:
+        cta: @cta_twitter1
+        operation: @operation_twitter1
+        activity: @activity_twitter1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_twitter_operation1
+        referrerUrl: @location_twitter_operation1->url
+        referrerName: @activity_twitter1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com2
+        targetUrl: @location_amariki_com2->url
+        targetName: @location_amariki_com2->name
+    report_cta_twitter_amariki_com3{1..38}:
+        cta: @cta_twitter1
+        operation: @operation_twitter1
+        activity: @activity_twitter1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_twitter_operation1
+        referrerUrl: @location_twitter_operation1->url
+        referrerName: @activity_twitter1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com3
+        targetUrl: @location_amariki_com3->url
+        targetName: @location_amariki_com3->name
+
+    # Linkedin
+
+    # Inbound from Operation to Location
+    report_cta_linkedin{1..71}:
+        cta: @cta_linkedin1
+        operation: @operation_linkedin1
+        activity: @activity_linkedin1
+        campaign: @campaign1
+        channel: @channel_linkedin
+        referrerLocation: @location_linkedin_operation1
+        referrerUrl: @location_linkedin_operation1->url
+        referrerName: @activity_linkedin1->name
+        sourceLocation: @location_linkedin_operation1
+        sourceUrl: @location_linkedin_operation1->url
+        sourceName: @activity_linkedin1->name
+        targetLocation: @location_website
+        targetUrl: @location_website->url
+        targetName: @location_website->name
+    # Outbound from CTA's Location to Location inside Channel
+    report_cta_linkedin_amariki_com1{1..15}:
+        cta: @cta_linkedin1
+        operation: @operation_linkedin1
+        activity: @activity_linkedin1
+        campaign: @campaign1
+        channel: @channel_linkedin
+        referrerLocation: @location_linkedin_operation1
+        referrerUrl: @location_linkedin_operation1->url
+        referrerName: @activity_linkedin1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com1
+        targetUrl: @location_amariki_com1->url
+        targetName: @location_amariki_com1->name
+    report_cta_linkedin_amariki_com2{1..61}:
+        cta: @cta_linkedin1
+        operation: @operation_linkedin1
+        activity: @activity_linkedin1
+        campaign: @campaign1
+        channel: @channel_linkedin
+        referrerLocation: @location_linkedin_operation1
+        referrerUrl: @location_linkedin_operation1->url
+        referrerName: @activity_linkedin1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com2
+        targetUrl: @location_amariki_com2->url
+        targetName: @location_amariki_com2->name
+    report_cta_linkedin_amariki_com3{1..18}:
+        cta: @cta_linkedin1
+        operation: @operation_linkedin1
+        activity: @activity_linkedin1
+        campaign: @campaign1
+        channel: @channel_linkedin
+        referrerLocation: @location_linkedin_operation1
+        referrerUrl: @location_linkedin_operation1->url
+        referrerName: @activity_linkedin1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com3
+        targetUrl: @location_amariki_com3->url
+        targetName: @location_amariki_com3->name

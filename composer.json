@@ -1,0 +1,14 @@
+{
+    "name": "amariki/data-test",
+    "description": "Sample data for CampaignChain that can be used for development and testing",
+    "keywords": ["CampaignChain"],
+    "homepage": "http://www.campaignchain.com",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "CampaignChain Inc.",
+            "email": "info@campaignchain.com",
+            "homepage": "http://www.campaignchain.com"
+        }
+    ]
+}
