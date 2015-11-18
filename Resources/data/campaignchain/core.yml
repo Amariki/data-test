@@ -273,8 +273,8 @@
         firstName: Amariki
         lastName: Test One
         gender: female
-        email: campaignchain-test1@groganz.com
-        emailVerified: campaignchain-test1@groganz.com
+        email: test1@amariki.com
+        emailVerified: test1@amariki.com
         profileUrl: https://www.facebook.com/profile.php?id=100008922632416
         profileImageUrl: https://graph.facebook.com/100008922632416/picture?width=150&height=150
         coverInfoUrl: https://graph.facebook.com/100008922632416?fields=cover
@@ -286,8 +286,8 @@
         firstName: Amariki
         lastName: Test Two
         gender: female
-        email: campaignchain-test1@groganz.com
-        emailVerified: campaignchain-test1@groganz.com
+        email: test2@amariki.com
+        emailVerified: test2@amariki.com
         profileUrl: https://www.facebook.com/profile.php?id=100008874400259
         profileImageUrl: https://graph.facebook.com/100008874400259/picture?width=150&height=150
         coverInfoUrl: https://graph.facebook.com/100008874400259?fields=cover
@@ -339,7 +339,7 @@
         identifier: 5484354468050484741
         displayName: Amariki Webinars
         firstName: Amariki
-        email: amariki@groganz.com
+        email: test1@amariki.com
 
 \CampaignChain\Location\MailChimpBundle\Entity\MailChimpUser:
     location_mailchimp_user1:
@@ -349,7 +349,7 @@
         displayName: Amariki Software
         firstName: Amariki
         lastName: Software
-        email: amariki@groganz.com
+        email: test1@amariki.com
         websiteUrl: http://www.amariki.com
         profileImageUrl: https://secure.gravatar.com/avatar/5851b55378d87459c61817edbc6768e0.jpg?s=300&d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fa.png
 
