@@ -24,6 +24,7 @@
         enabled: 1
         salt: 2fhwi8a972zo4ocosgssgkksg0wc08g
         password: AwxsWxSyOAEC0whc2d67Jd3ktUBf6REZmwkWJgo9ucMbjV57CQCT6S6cmue54qJ0QOkEDqfMH3++Kw1LtAcz8Q==
+        avatarImage: amariki/data-test/Resources/data/campaignchain/images/profile/<numberBetween(1, 20)>.jpg
         roles: [ROLE_SUPER_ADMIN]
     fos_user_user{1..5}:
         username: user<current()>
@@ -35,6 +36,7 @@
         enabled: 1
         salt: 2fhwi8a972zo4ocosgssgkksg0wc08g
         password: AwxsWxSyOAEC0whc2d67Jd3ktUBf6REZmwkWJgo9ucMbjV57CQCT6S6cmue54qJ0QOkEDqfMH3++Kw1LtAcz8Q==
+        avatarImage: amariki/data-test/Resources/data/campaignchain/images/profile/<numberBetween(1, 20)>.jpg
         roles: [ROLE_ADMIN]
         timezone: <timezone()>
 
