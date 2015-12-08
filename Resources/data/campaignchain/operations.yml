@@ -69,22 +69,19 @@
         URL: https://attendee.gotowebinar.com/register/1772346038074117889
     location_facebook{1..30}:
         parent: @location_facebook_user1
-        channel: @channel_facebook
         name: @operation_facebook<current()>->name
         operation: @operation_facebook<current()>
         locationModule: @module_config_location_facebook_status
         status: unpublished
     location_twitter{1..30}:
         parent: @location_twitter
-        channel: @channel_twitter
         name: @operation_twitter<current()>->name
         operation: @operation_twitter<current()>
         locationModule: @module_config_location_twitter_status
         status: unpublished
     location_linkedin{1..30}:
         parent: @location_linkedin
-        channel: @channel_linkedin
         name: @operation_linkedin<current()>->name
         operation: @operation_linkedin<current()>
         locationModule: @module_config_location_linkedin_user
-        status: unpublished        
+        status: unpublished
