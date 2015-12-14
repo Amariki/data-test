@@ -439,6 +439,50 @@
         type: campaignchain-hook
         path: vendor/campaignchain/hook-date-repeat
         class: "CampaignChain\Hook\DateRepeatBundle\CampaignChainHookDateRepeatBundle"
+    bundle_activity_ezplatform:
+        name: campaignchain/activity-ezplatform
+        description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-ezplatform
+        class: "CampaignChain\Activity\EZPlatformBundle\CampaignChainActivityEZPlatformBundle"
+    bundle_location_ezplatform:
+        name: campaignchain/location-ezplatform
+        description: Holds information about eZ Platform users and content objects.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-ezplatform
+        class: "CampaignChain\Location\EZPlatformBundle\CampaignChainLocationEZPlatformBundle"
+    bundle_operation_ezplatform:
+        name: campaignchain/operation-ezplatform
+        description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-ezplatform
+        class: "CampaignChain\Operation\EZPlatformBundle\CampaignChainOperationEZPlatformBundle"
+    bundle_channel_ezplatform:
+        name: campaignchain/channel-ezplatform
+        description: Connects to eZ Platform's REST API.
+        license: Apache-2.0
+        authors:
+            name: Sandro Groganz
+            email: sandro@campaignchain.com"
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-ezplatform
+        class: "CampaignChain\Channel\EZPlatformBundle\CampaignChainChannelEZPlatformBundle"
 
 \CampaignChain\CoreBundle\Entity\Hook:
     module_config_hook_due:
@@ -534,6 +578,13 @@
         displayName: 'SlideShare'
         routes:
             new: campaignchain_channel_slideshare_create
+    module_config_channel_ezplatform:
+        bundle: @bundle_channel_ezplatform
+        identifier: ccampaignchain-ezplatform
+        description: Connects to eZ Platform's REST API
+        displayName: 'eZ Platform'
+        routes:
+            new: campaignchain_channel_ezplatform_new
 
 \CampaignChain\CoreBundle\Entity\LocationModule:
     module_config_location_twitter_user:
@@ -602,6 +653,16 @@
         identifier: campaignchain-slideshare-user
         displayName: 'SlideShare'
         description: Holds information about a SlideShare user.
+    module_config_location_ezplatform_user:
+        bundle: @bundle_location_ezplatform
+        identifier: campaignchain-ezplatform-user
+        displayName: 'eZ Platform User'
+        description: Holds information about an eZ Platform user.
+    module_config_location_ezplatform_user:
+        bundle: @bundle_location_ezplatform
+        identifier: campaignchain-ezplatform-object
+        displayName: 'eZ Platform Content Object'
+        description: Holds information about an eZ Platform content object.
 
 \CampaignChain\CoreBundle\Entity\CampaignModule:
     module_config_campaign_scheduled:
@@ -802,7 +863,23 @@
         hooks:
             default:
                 campaignchain-due: true
-            
+    module_config_activity_ezplatform:
+        bundle: @bundle_activity_ezplatform
+        channelModules:
+            - @module_config_channel_ezplatform
+        identifier: campaignchain-ezplatform-schedule
+        displayName: 'Schedule eZ Platform content'
+        routes:
+            new: campaignchain_activity_ezplatform_schedule_new
+            edit: campaignchain_activity_ezplatform_schedule_edit
+            edit_modal: campaignchain_activity_ezplatform_schedule_edit_modal
+            edit_api: campaignchain_activity_ezplatform_schedule_edit_api
+            read: campaignchain_activity_ezplatform_schedule_read
+        hooks:
+            default:
+                campaignchain-due: true
+                campaignchain-assignee: true
+
 \CampaignChain\CoreBundle\Entity\OperationModule:
     module_config_operation_facebook:
         bundle: @bundle_operation_facebook
@@ -862,7 +939,17 @@
             report: campaignchain.job.report.slideshare.publish_slideshow
         params:
             owns_location: true
-            
+    module_config_operation_ezplatform:
+        bundle: @bundle_operation_ezplatform
+        identifier: campaignchain-ezplatform-schedule
+        displayName: 'Schedule eZ Platform Content'
+        description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
+        services:
+            job: campaignchain.job.operation.ezplatform.schedule
+            report: campaignchain.job.report.ezplatform.schedule
+        params:
+            owns_location: true
+
 \CampaignChain\CoreBundle\Entity\ReportModule:
     module_config_cta_tracking_per_location:
         identifier: campaignchain-analytics-cta-tracking-per-location
