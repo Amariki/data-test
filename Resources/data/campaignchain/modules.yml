@@ -4,8 +4,8 @@
         description: Community Edition of CampaignChain.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-core
         path: vendor/campaignchain/core
@@ -15,8 +15,8 @@
         description: Community Edition of CampaignChain.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-distribution
         path: vendor/campaignchain/distribution-ce
@@ -26,8 +26,8 @@
         description: OAuth client to be used by channel modules.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-security
         path: vendor/campaignchain/security-authentication-client-oauth
@@ -37,8 +37,8 @@
         description: Connect with Facebook.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-facebook
@@ -48,8 +48,8 @@
         description: Connect with Twitter.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-twitter
@@ -59,8 +59,8 @@
         description: Connect with LinkedIn.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-linkedin
@@ -70,8 +70,8 @@
         description: Connect with a Website.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-website
@@ -81,8 +81,8 @@
         description: Connects to Citrix services such as GoToMeeting or GoToWebinar.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-citrix
@@ -92,8 +92,8 @@
         description: Connects to MailChimp.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-mailchimp
@@ -103,8 +103,8 @@
         description: Connects to SlideShare.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-slideshare
@@ -114,8 +114,8 @@
         description: Integrates Twitter locations such as user stream and status.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-twitter
@@ -125,8 +125,8 @@
         description: LinkedIn user stream.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-linkedin
@@ -136,8 +136,8 @@
         description: Facebook user and page stream.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-facebook
@@ -147,8 +147,8 @@
         description: Simple module that connects a Website and to define its pages as CampaignChain Locations.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-website
@@ -158,8 +158,8 @@
         description: Holds information about a Citrix Location and user.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-website
@@ -169,8 +169,8 @@
         description: MailChimp account owner and newsletter Location.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-mailchimp
@@ -180,8 +180,8 @@
         description: Holds information about a SlideShare user.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-slideshare
@@ -191,8 +191,8 @@
         description: A campaign with a start and end date.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-campaign
         path: vendor/campaignchain/campaign-scheduled
@@ -202,8 +202,8 @@
         description: Create re-usable templates of campaigns.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-campaign
         path: vendor/campaignchain/campaign-template
@@ -213,8 +213,8 @@
         description: A campaign that is being repeated automatically.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-campaign
         path: vendor/campaignchain/campaign-repeating
@@ -224,8 +224,8 @@
         description: A milestone with a due date.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-milestone
         path: vendor/campaignchain/milestone-scheduled
@@ -235,8 +235,8 @@
         description: Collection of various Facebook activities, such as post or share a message.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-facebook
@@ -246,8 +246,8 @@
         description: Collection of various Twitter activities, such as tweeting and re-tweeting.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-twitter
@@ -257,8 +257,8 @@
         description: Collection of various LinkedIn activities, such as tweeting and re-tweeting.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-linkedin
@@ -268,8 +268,8 @@
         description: Include a Webinar into a campaign.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-gotowebinar
@@ -279,8 +279,8 @@
         description: Add upcoming newsletter campaign
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-mailchimp
@@ -290,8 +290,8 @@
         description: Include a slide into a campaign.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-slideshare
@@ -301,8 +301,8 @@
         description: Collection of various Facebook operations.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-facebook
@@ -312,8 +312,8 @@
         description: Collection of various Twitter operations.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-twitter
@@ -323,8 +323,8 @@
         description: Collection of various LinkedIn operations.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-linkedin
@@ -334,8 +334,8 @@
         description: Include a Webinar into a campaign.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-gotowebinar
@@ -345,8 +345,8 @@
         description: Add upcoming newsletter campaign
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-mailchimp
@@ -356,8 +356,8 @@
         description: Include a Webinar into a campaign.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-slideshare
@@ -367,8 +367,8 @@
         description: Shows inbound and outbound Calls-to-Action for a Location.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-report-analytics
         path: vendor/campaignchain/report-analytics-cta-tracking
@@ -378,8 +378,8 @@
         description: Show metrics per activity.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-report-analytics
         path: vendor/campaignchain/report-analytics-metrics-per-activity
@@ -389,8 +389,8 @@
         description: Define the due date of an entity.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-due
@@ -400,8 +400,8 @@
         description: Define the start and end date of an entity.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-duration
@@ -411,8 +411,8 @@
         description: Assign a responsible user to an entity.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-assignee
@@ -422,8 +422,8 @@
         description: Define the timespan of an entity.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-timespan
@@ -433,8 +433,8 @@
         description: Define the repeating dates of an entity.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-date-repeat
@@ -444,8 +444,8 @@
         description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-ezplatform
@@ -455,8 +455,8 @@
         description: Holds information about eZ Platform users and content objects.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-ezplatform
@@ -466,8 +466,8 @@
         description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-ezplatform
@@ -477,12 +477,23 @@
         description: Connects to eZ Platform's REST API.
         license: Apache-2.0
         authors:
-            name: Sandro Groganz
-            email: sandro@campaignchain.com"
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-ezplatform
         class: "CampaignChain\Channel\EZPlatformBundle\CampaignChainChannelEZPlatformBundle"
+    bundle_security_authentication_server_oauth:
+        name: campaignchain/security-authentication-server-oauth
+        description: OAuth server to authenticate against to use built-in REST API.
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-security
+        path: vendor/campaignchain/security-authentication-server-oauth
+        class: "CampaignChain\Security\Authentication\Server\OAuthBundle\CampaignChainSecurityAuthenticationServerOAuthBundle"
 
 \CampaignChain\CoreBundle\Entity\Hook:
     module_config_hook_due:
@@ -965,3 +976,13 @@
         bundle: @bundle_report_analytics_metrics_per_activity
         routes:
             index: campaignchain_report_analytics_metrics_per_activity_index
+
+\CampaignChain\CoreBundle\Entity\SecurityModule:
+    module_config_security_authentication_client_oauth:
+        identifier: campaignchain-security-authentication-client-oauth
+        displayName: OAuth Client
+        bundle: @bundle_security_authentication_client_oauth
+    module_config_security_authentication_server_oauth:
+        identifier: campaignchain-security-authentication-server-oauth
+        displayName: OAuth Server
+        bundle: @bundle_security_authentication_server_oauth

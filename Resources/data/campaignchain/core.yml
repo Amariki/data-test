@@ -6,6 +6,10 @@
         icon: /bundles/campaignchaindistributionce/images/icon.png
         currency: USD
         homepage: http://www.campaignchain.com
+        navigation:
+            settings:
+                - ["OAuth Client Apps", campaignchain_security_authentication_client_oauth_apps]
+                - ["OAuth Server Apps", campaignchain_security_authentication_server_oauth_apps]
         modules:
             repositories:
                     - http://store.campaignchain.com/modules/
