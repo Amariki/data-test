@@ -1,9 +1,7 @@
 \CampaignChain\CoreBundle\Entity\System:
     system:
+        package: campaignchain/campaignchain-ce
         name: CampaignChain Community Edition
-        version: dev-master
-        logo: /bundles/campaignchaindistributionce/images/logo.png
-        icon: /bundles/campaignchaindistributionce/images/icon.png
         currency: USD
         homepage: http://www.campaignchain.com
         navigation:
