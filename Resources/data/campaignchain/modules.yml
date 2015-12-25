@@ -494,6 +494,39 @@
         type: campaignchain-security
         path: vendor/campaignchain/security-authentication-server-oauth
         class: "CampaignChain\Security\Authentication\Server\OAuthBundle\CampaignChainSecurityAuthenticationServerOAuthBundle"
+    bundle_channel_google_analytics:
+        name: campaignchain/channel-google-analytics
+        description: Connect with Google Analytics
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-google-analytics
+        class: "CampaignChain\Channel\GoogleAnalyticsBundle\CampaignChainChannelGoogleAnalyticsBundle"
+    bundle_location_google_analytics:
+        name: campaignchain/location-google-analytics
+        description: Google Analytics Integration
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-google-analytics
+        class: "CampaignChain\Location\GoogleAnalyticsBundle\CampaignChainLocationGoogleAnalyticsBundle"
+    bundle_report_google_analytics:
+        name: campaignchain/report-google-analytics
+        description: Access Google Analytics Data
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-report
+        path: vendor/campaignchain/report-google-analytics
+        class: "CampaignChain\Report\GoogleAnalyticsBundle\CampaignChainReportGoogleAnalyticsBundle"
 
 \CampaignChain\CoreBundle\Entity\Hook:
     module_config_hook_due:
@@ -591,9 +624,16 @@
             new: campaignchain_channel_slideshare_create
     module_config_channel_ezplatform:
         bundle: @bundle_channel_ezplatform
-        identifier: ccampaignchain-ezplatform
+        identifier: campaignchain-ezplatform
         description: Connects to eZ Platform's REST API
         displayName: 'eZ Platform'
+        routes:
+            new: campaignchain_channel_ezplatform_new
+    module_config_channel_google_analytics:
+        bundle: @bundle_channel_google_analytics
+        identifier: campaignchain-google-analytics
+        description: Provides a channel for Google Analytics
+        displayName: 'Google Analytics'
         routes:
             new: campaignchain_channel_ezplatform_new
 
@@ -674,6 +714,11 @@
         identifier: campaignchain-ezplatform-object
         displayName: 'eZ Platform Content Object'
         description: Holds information about an eZ Platform content object.
+    module_config_location_google_analytics:
+        bundle: @bundle_location_google_analytics
+        identifier: campaignchain-google-analytics
+        displayName: 'Google Analytics Property'
+        description: Shows analytics data for a selected web property.
 
 \CampaignChain\CoreBundle\Entity\CampaignModule:
     module_config_campaign_scheduled:
@@ -976,6 +1021,13 @@
         bundle: @bundle_report_analytics_metrics_per_activity
         routes:
             index: campaignchain_report_analytics_metrics_per_activity_index
+    module_config_google_analytics:
+        identifier: campaignchain-google-analytics
+        displayName: Google Analytics
+        description: Report Data from Google Analytics
+        bundle: @bundle_report_google_analytics
+        routes:
+            index: campaignchain_report_google_analytics_index
 
 \CampaignChain\CoreBundle\Entity\SecurityModule:
     module_config_security_authentication_client_oauth:

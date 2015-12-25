@@ -199,6 +199,11 @@
         channelModule: @module_config_channel_slideshare
         status: active
         trackingId: 3d6704ebc3842c95f656bc5eb2c96e70
+    channel_google_analytics:
+        name: Amariki Wordpress
+        channelModule: @module_config_channel_google_analytics
+        status: active
+        trackingId: 344fb8f21ab946d0ad1ab9ed2a6ab51a
 
 \CampaignChain\CoreBundle\Entity\Location:
     location_facebook_user1:
@@ -268,6 +273,13 @@
         channel: @channel_slideshare
         status: active
         URL: http://www.slideshare.net/amariki_test
+    location_google_analytics_wordpress_amariki_com:
+        name: Amariki Wordpress
+        identifier: UA-70347540-1
+        channel: @channel_google_analytics
+        status: active
+        URL: https://www.google.com/analytics/web/#report/visitors-overview/a70347540w107556750p112044954
+        locationModule: @module_config_location_google_analytics
 
 \CampaignChain\Location\FacebookBundle\Entity\User:
     location_facebook_user_user1:
@@ -363,6 +375,18 @@
         identifier: amariki_test
         displayName: amariki_test
         password: amar1k1
+
+\CampaignChain\Location\GoogleAnalyticsBundle\Entity\Profile:
+    location_google_analytics_profile1:
+        location: @location_google_analytics_wordpress_amariki_com
+        identifier: http://wordpress.amariki.com
+        displayName: Amariki Wordpress
+        accountId: 70347540
+        profileId: UA-70347540-1
+        segment: 0
+        metrics:
+            - ga:sessions
+        belongingLocation: @location_website
 
 \CampaignChain\CoreBundle\Entity\Activity:
     # GoToWebinar
