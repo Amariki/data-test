@@ -49,17 +49,20 @@
     cta_facebook1:
         operation: @operation_facebook1
         location: @location_website
-        url: http://wordpress.amariki.com/
+        originalUrl: http://wordpress.amariki.com/
+        expandedUrl: http://wordpress.amariki.com/
         trackingId: <md5()>
     cta_twitter1:
         operation: @operation_twitter1
         location: @location_twitter
-        url: http://wordpress.amariki.com/
+        originalUrl: http://wordpress.amariki.com/
+        expandedUrl: http://wordpress.amariki.com/
         trackingId: <md5()>
     cta_linkedin1:
         operation: @operation_linkedin1
         location: @location_linkedin
-        url: http://wordpress.amariki.com/
+        originalUrl: http://wordpress.amariki.com/
+        expandedUrl: http://wordpress.amariki.com/
         trackingId: <md5()>
 
 \CampaignChain\CoreBundle\Entity\ReportCTA:
