@@ -1,3 +1,7 @@
+\CampaignChain\CoreBundle\Entity\System:
+    system1 (extends system):
+        bitlyAccessToken: INSERT_SECRET_TOKEN
+
 \CampaignChain\Security\Authentication\Client\OAuthBundle\Entity\Application:
     application_twitter:
         resourceOwner: Twitter

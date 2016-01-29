@@ -1,5 +1,5 @@
 \CampaignChain\CoreBundle\Entity\System:
-    system:
+    system (template):
         package: campaignchain/campaignchain-ce
         name: CampaignChain Community Edition
         currency: USD
