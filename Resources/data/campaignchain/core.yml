@@ -204,6 +204,11 @@
         channelModule: @module_config_channel_google_analytics
         status: active
         trackingId: 344fb8f21ab946d0ad1ab9ed2a6ab51a
+    channel_xing:
+        name: Amariki Test
+        channelModule: @module_config_channel_xing
+        status: active
+        trackingId: de66e0e264ac81f82e724872aa600b33
 
 \CampaignChain\CoreBundle\Entity\Location:
     location_facebook_user1:
@@ -280,6 +285,14 @@
         status: active
         URL: https://www.google.com/analytics/web/#report/visitors-overview/a70347540w107556750p112044954
         locationModule: @module_config_location_google_analytics
+    location_xing:
+        name: Amariki Test
+        identifier: 24408169_98529e
+        locationModule: @module_config_location_xing_user
+        image: https://www.xing.com/assets/frontend_minified/img/users/nobody_m.192x192.jpg
+        channel: @channel_xing
+        status: active
+        URL: https://www.xing.com/profile/Amariki_Test
 
 \CampaignChain\Location\FacebookBundle\Entity\User:
     location_facebook_user_user1:
@@ -376,6 +389,17 @@
         displayName: amariki_test
         password: amar1k1
 
+\CampaignChain\Location\XingBundle\Entity\XingUser:
+    location_xing_user1:
+        location: @location_xing
+        identifier: amariki_test
+        displayName: Amariki Test
+        firstName: Amariki
+        lastName: Test
+        email: test2@amariki.com
+        profileUrl: https://www.xing.com/profile/Amariki_Test
+        profileImageUrl: https://www.xing.com/assets/frontend_minified/img/users/nobody_m.192x192.jpg
+
 \CampaignChain\Location\GoogleAnalyticsBundle\Entity\Profile:
     location_google_analytics_profile1:
         location: @location_google_analytics_wordpress_amariki_com
@@ -435,6 +459,17 @@
         startDate: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
         status: closed
         assignee: @fos_user_user*
+    # XING Message
+    activity_xing{1..5}:
+        name: Announcement <current()> on XING
+        campaign: @campaign1
+        channel: @channel_xing
+        location: @location_xing
+        activityModule: @module_config_activity_xing
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+        status: closed
+        assignee: @fos_user_user*
     # Facebook Status Update
     activity_facebook{6..10}:
         name: Announcement <current()> on Facebook
@@ -464,6 +499,17 @@
         channel: @channel_linkedin
         location: @location_linkedin
         activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # XING Message
+    activity_xing{6..10}:
+        name: Announcement <current()> on XING
+        campaign: @campaign2
+        channel: @channel_xing
+        location: @location_xing
+        activityModule: @module_config_activity_xing
         triggerHook: @module_config_hook_due
         startDate: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
         status: open
@@ -501,6 +547,17 @@
         startDate: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
         status: open
         assignee: @fos_user_user*
+    # XING Message
+    activity_xing{11..15}:
+        name: Announcement <current()> on XING
+        campaign: @campaign3
+        channel: @channel_xing
+        location: @location_xing
+        activityModule: @module_config_activity_xing
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
+        status: open
+        assignee: @fos_user_user*
     # Facebook Status Update
     activity_facebook{16..20}:
         name: Announcement <current()> on Facebook
@@ -530,6 +587,17 @@
         channel: @channel_linkedin
         location: @location_linkedin
         activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
+        status: open
+        assignee: @fos_user_user*
+    # XING Message
+    activity_xing{16..20}:
+        name: Announcement <current()> on XING
+        campaign: @campaign4
+        channel: @channel_xing
+        location: @location_xing
+        activityModule: @module_config_activity_xing
         triggerHook: @module_config_hook_due
         startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
         status: open
@@ -567,6 +635,17 @@
         startDate: <dateTimeBetween(@campaign_template1->startDate, @campaign_template1->endDate)>
         status: paused
         assignee: @fos_user_user*
+    # XING Message
+    activity_xing{21..25}:
+        name: Announcement <current()> on XING
+        campaign: @campaign_template1
+        channel: @channel_xing
+        location: @location_xing
+        activityModule: @module_config_activity_xing
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_template1->startDate, @campaign_template1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
     # Facebook Status Update
     activity_facebook{26..30}:
         name: Announcement <current()> on Facebook
@@ -596,6 +675,17 @@
         channel: @channel_linkedin
         location: @location_linkedin
         activityModule: @module_config_activity_linkedin
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign_repeating1->startDate, @campaign_repeating1->endDate)>
+        status: paused
+        assignee: @fos_user_user*
+    # XING Message
+    activity_xing{26..30}:
+        name: Announcement <current()> on XING
+        campaign: @campaign_repeating1
+        channel: @channel_xing
+        location: @location_xing
+        activityModule: @module_config_activity_xing
         triggerHook: @module_config_hook_due
         startDate: <dateTimeBetween(@campaign_repeating1->startDate, @campaign_repeating1->endDate)>
         status: paused

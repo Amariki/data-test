@@ -28,6 +28,11 @@
         timeZone: "Amarika/Los Angeles"
         operation: @operation_gotowebinar1
 
+\CampaignChain\Operation\XingBundle\Entity\XingMessage:
+    status_xing{1..30}:
+        message: <text(20)> <url()> <text(20)> <url()> <text(20)>
+        operation: @operation_xing<current()>
+
 \CampaignChain\CoreBundle\Entity\Operation:
     # GoToWebinar
     operation_gotowebinar1:
@@ -56,6 +61,12 @@
         activity: @activity_linkedin<current()>
         startDate: @activity_linkedin<current()>->startDate
         triggerHook: @activity_linkedin<current()>->triggerHook
+    operation_xing{1..30}:
+        operationModule: @module_config_operation_xing
+        name: @activity_xing<current()>->name
+        activity: @activity_xing<current()>
+        startDate: @activity_xing<current()>->startDate
+        triggerHook: @activity_xing<current()>->triggerHook
 
 # Locations created by Operations
 \CampaignChain\CoreBundle\Entity\Location:
@@ -84,4 +95,10 @@
         name: @operation_linkedin<current()>->name
         operation: @operation_linkedin<current()>
         locationModule: @module_config_location_linkedin_user
+        status: unpublished
+    location_xing{1..30}:
+        parent: @location_xing
+        name: @operation_xing<current()>->name
+        operation: @operation_xing<current()>
+        locationModule: @module_config_location_xing_user
         status: unpublished

@@ -527,6 +527,50 @@
         type: campaignchain-report
         path: vendor/campaignchain/report-google-analytics
         class: "CampaignChain\Report\GoogleAnalyticsBundle\CampaignChainReportGoogleAnalyticsBundle"
+    bundle_channel_xing:
+        name: campaignchain/channel-xing
+        description: Connect with Xing.
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-channel
+        path: vendor/campaignchain/channel-xing
+        class: "CampaignChain\Channel\XingBundle\CampaignChainChannelXingBundle"
+    bundle_location_xing:
+        name: campaignchain/location-xing
+        description: Holds information about a Xing user.
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-location
+        path: vendor/campaignchain/location-xing
+        class: "CampaignChain\Location\XingBundle\CampaignChainLocationXingBundle"
+    bundle_activity_xing:
+        name: campaignchain/activity-xing
+        description: Post a message on Xing.
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-activity
+        path: vendor/campaignchain/activity-xing
+        class: "CampaignChain\Activity\XingBundle\CampaignChainActivityXingBundle"
+    bundle_operation_xing:
+        name: campaignchain/operation-xing
+        description: Post a message on Xing.
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-operation
+        path: vendor/campaignchain/operation-xing
+        class: "CampaignChain\Operation\XingBundle\CampaignChainOperationXingBundle"
 
 \CampaignChain\CoreBundle\Entity\Hook:
     module_config_hook_due:
@@ -636,6 +680,13 @@
         displayName: 'Google Analytics'
         routes:
             new: campaignchain_channel_ezplatform_new
+    module_config_channel_xing:
+        bundle: @bundle_channel_xing
+        identifier: campaignchain-xing
+        description: Connects to Xing.
+        displayName: 'Xing'
+        routes:
+            new: campaignchain_channel_xing_create
 
 \CampaignChain\CoreBundle\Entity\LocationModule:
     module_config_location_twitter_user:
@@ -719,6 +770,11 @@
         identifier: campaignchain-google-analytics
         displayName: 'Google Analytics Property'
         description: Shows analytics data for a selected web property.
+    module_config_location_xing_user:
+        bundle: @bundle_location_xing
+        identifier: campaignchain-xing
+        displayName: 'Xing'
+        description: Holds information about a Xing user.
 
 \CampaignChain\CoreBundle\Entity\CampaignModule:
     module_config_campaign_scheduled:
@@ -935,6 +991,22 @@
             default:
                 campaignchain-due: true
                 campaignchain-assignee: true
+    module_config_activity_xing:
+        bundle: @bundle_activity_xing
+        channelModules:
+            - @module_config_channel_xing
+        identifier: campaignchain-xing
+        displayName: 'Post message on Xing'
+        routes:
+            new: campaignchain_activity_xing_new
+            edit: campaignchain_activity_xing_edit
+            edit_modal: campaignchain_activity_xing_edit_modal
+            edit_api: campaignchain_activity_xing_edit_api
+            read: campaignchain_activity_xing_read
+        hooks:
+            default:
+                campaignchain-due: true
+                campaignchain-assignee: true
 
 \CampaignChain\CoreBundle\Entity\OperationModule:
     module_config_operation_facebook:
@@ -1003,6 +1075,16 @@
         services:
             job: campaignchain.job.operation.ezplatform.schedule
             report: campaignchain.job.report.ezplatform.schedule
+        params:
+            owns_location: true
+    module_config_operation_xing:
+        bundle: @bundle_operation_xing
+        identifier: campaignchain-xing-message
+        displayName: 'Post message on Xing'
+        description: This module posts a message on Xing
+        services:
+            job: campaignchain.job.operation.xing.message
+            report: campaignchain.job.report.xing.message
         params:
             owns_location: true
 

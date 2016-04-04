@@ -27,6 +27,10 @@
         resourceOwner: SlideShare
         key: INSERT_YOUR_APP_KEY
         secret: INSERT_YOUR_APP_SECRET
+    application_xing:
+        resourceOwner: Xing
+        key: INSERT_YOUR_APP_KEY
+        secret: INSERT_YOUR_APP_SECRET
 
 \CampaignChain\Security\Authentication\Client\OAuthBundle\Entity\Token:
     token1:
@@ -68,3 +72,8 @@
         application: @application_mailchimp
         location: @location_mailchimp
         endpoint: https://us10.api.mailchimp.com/2.0/
+    token8:
+        accessToken: INSERT_ACCESS_TOKEN
+        tokenSecret: INSERT_TOKEN_SECRET
+        application: @application_xing
+        location: @location_xing
