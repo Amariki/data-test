@@ -56,6 +56,12 @@
     activity_metric_mailchimp_users_who_clicked:
         name: Users who clicked
         bundle: @bundle_operation_mailchimp->name
+    activity_metric_xing_likes:
+        name: Likes
+        bundle: @bundle_operation_xing->name
+    activity_metric_xing_comments:
+        name: Comments
+        bundle: @bundle_operation_xing->name
 
 \CampaignChain\CoreBundle\Entity\ReportAnalyticsActivityFact:
     # GoToWebinar

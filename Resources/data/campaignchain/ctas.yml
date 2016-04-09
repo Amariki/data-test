@@ -20,6 +20,13 @@
         url: https://www.linkedin.com/nhome/updates?topic=xxx
         name: @activity_linkedin1->name
         locationModule: @module_config_location_linkedin_user
+    location_xing_operation1:
+        parent: @location_xing
+        operation: @operation_xing1
+        identifier: <md5()>
+        url: https://www.xing.com/feedy/stories/xxx
+        name: @activity_xing1->name
+        locationModule: @module_config_location_xing_user
     location_amariki_com1:
         channel: @channel_website
         parent: @location_website
@@ -61,6 +68,12 @@
     cta_linkedin1:
         operation: @operation_linkedin1
         location: @location_linkedin
+        originalUrl: http://wordpress.amariki.com/
+        expandedUrl: http://wordpress.amariki.com/
+        trackingId: <md5()>
+    cta_xing1:
+        operation: @operation_xing1
+        location: @location_xing
         originalUrl: http://wordpress.amariki.com/
         expandedUrl: http://wordpress.amariki.com/
         trackingId: <md5()>
@@ -255,6 +268,71 @@
         referrerLocation: @location_linkedin_operation1
         referrerUrl: @location_linkedin_operation1->url
         referrerName: @activity_linkedin1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com3
+        targetUrl: @location_amariki_com3->url
+        targetName: @location_amariki_com3->name
+
+    # XING
+
+    # Inbound from Operation to Location
+    report_cta_xing{1..221}:
+        cta: @cta_xing1
+        operation: @operation_xing1
+        activity: @activity_xing1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_xing_operation1
+        referrerUrl: @location_xing_operation1->url
+        referrerName: @activity_xing1->name
+        sourceLocation: @location_xing_operation1
+        sourceUrl: @location_xing_operation1->url
+        sourceName: @activity_xing1->name
+        targetLocation: @location_website
+        targetUrl: @location_website->url
+        targetName: @location_website->name
+    # Outbound from CTA's Location to Location inside Channel
+    report_cta_xing_amariki_com1{1..15}:
+        cta: @cta_xing1
+        operation: @operation_xing1
+        activity: @activity_xing1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_xing_operation1
+        referrerUrl: @location_xing_operation1->url
+        referrerName: @activity_xing1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com1
+        targetUrl: @location_amariki_com1->url
+        targetName: @location_amariki_com1->name
+    report_cta_xing_amariki_com2{1..11}:
+        cta: @cta_xing1
+        operation: @operation_xing1
+        activity: @activity_xing1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_xing_operation1
+        referrerUrl: @location_xing_operation1->url
+        referrerName: @activity_xing1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
+        targetLocation: @location_amariki_com2
+        targetUrl: @location_amariki_com2->url
+        targetName: @location_amariki_com2->name
+    report_cta_xing_amariki_com3{1..38}:
+        cta: @cta_xing1
+        operation: @operation_xing1
+        activity: @activity_xing1
+        campaign: @campaign1
+        channel: @channel_facebook
+        referrerLocation: @location_xing_operation1
+        referrerUrl: @location_xing_operation1->url
+        referrerName: @activity_xing1->name
         sourceLocation: @location_website
         sourceUrl: @location_website->url
         sourceName: @location_website->name
