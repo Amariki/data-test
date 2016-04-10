@@ -3,6 +3,7 @@
         package: campaignchain/campaignchain-ce
         name: CampaignChain Community Edition
         currency: USD
+        version: dev-master
         homepage: http://www.campaignchain.com
         navigation:
             settings:
