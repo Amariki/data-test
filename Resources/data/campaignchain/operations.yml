@@ -41,6 +41,13 @@
         activity: @activity_gotowebinar1
         startDate: @activity_gotowebinar1->startDate
         triggerHook: @activity_gotowebinar1->triggerHook
+    # MailChimp
+    operation_mailchimp1:
+        operationModule: @module_config_operation_mailchimp
+        name: @activity_mailchimp1->name
+        activity: @activity_mailchimp1
+        startDate: @activity_mailchimp1->startDate
+        triggerHook: @activity_mailchimp1->triggerHook
     # Facebook Status Update
     operation_facebook{1..30}:
         operationModule: @module_config_operation_facebook

@@ -603,6 +603,19 @@
         startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
         status: open
         assignee: @fos_user_user*
+    # MailChimp
+    activity_mailchimp1:
+        name: "Newsletter highlighting new product"
+        campaign: @campaign4
+        channel: @channel_mailchimp
+        location: @location_mailchimp
+        equalsOperation: true
+        activityModule: @module_config_activity_mailchimp
+        triggerHook: @module_config_hook_due
+        startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
+        endDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
+        status: open
+        assignee: @fos_user_user*
     # Facebook Status Update
     activity_facebook{21..25}:
         name: Announcement <current()> on Facebook
