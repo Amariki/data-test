@@ -355,7 +355,7 @@
         profileUrl: http://twitter.com/AmarikiTest1
         profileImageUrl: http://abs.twimg.com/sticky/default_profile_images/default_profile_5.png
 
-\CampaignChain\Location\LinkedInBundle\Entity\LinkedInUser:
+\CampaignChain\Location\LinkedInBundle\Entity\User:
     location_linkedin_user1:
         location: @location_linkedin
         identifier: 362412594
