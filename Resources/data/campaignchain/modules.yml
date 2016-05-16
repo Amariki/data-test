@@ -439,6 +439,17 @@
         type: campaignchain-hook
         path: vendor/campaignchain/hook-date-repeat
         class: "CampaignChain\Hook\DateRepeatBundle\CampaignChainHookDateRepeatBundle"
+    bundle_hook_image:
+        name: campaignchain/hook-image
+        description: Upload one or more Images for an Activity.
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-hook
+        path: vendor/campaignchain/hook-image
+        class: "CampaignChain\Hook\ImageBundle\CampaignChainHookImageBundle"
     bundle_activity_ezplatform:
         name: campaignchain/activity-ezplatform
         description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
@@ -617,6 +628,14 @@
             form: campaignchain.hook.form.type.campaignchain.date_repeat
             entity: campaignchain.hook.campaignchain.date_repeat
             event_subscriber: campaignchain.hook.listener.campaignchain.date_repeat
+        type: default
+    module_config_hook_image:
+        bundle: @bundle_hook_image
+        identifier: campaignchain-image
+        label: Image
+        services:
+            form: campaignchain.hook.form.type.campaignchain.image
+            entity: campaignchain.hook.campaignchain.image
         type: default
 
 \CampaignChain\CoreBundle\Entity\ChannelModule:
@@ -898,6 +917,7 @@
             default:
                 campaignchain-due: true
                 campaignchain-assignee: true
+                campaignchain-image: true
     module_config_activity_twitter:
         bundle: @bundle_activity_twitter
         channelModules:
@@ -914,6 +934,7 @@
             default:
                 campaignchain-due: true
                 campaignchain-assignee: true
+                campaignchain-image: true
     module_config_activity_linkedin:
         bundle: @bundle_activity_linkedin
         channelModules:
@@ -929,6 +950,8 @@
         hooks:
             default:
                 campaignchain-due: true
+                campaignchain-assignee: true
+                campaignchain-image: true
     module_config_activity_gotowebinar:
         bundle: @bundle_activity_gotowebinar
         channelModules:
