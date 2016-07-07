@@ -190,142 +190,42 @@
         value: <numberBetween(100, 10000)>
         time: <dateTimeBetween(@activity_facebook4->startDate, @campaign1->endDate)>
 
-\CampaignChain\CoreBundle\Entity\ReportAnalyticsChannelMetric:
-    channel_metric_facebook{1..5}:
-        name: Facebook Channel Metric <current()>
-    channel_metric_twitter{1..5}:
-        name: Twitter Channel Metric <current()>
+\CampaignChain\CoreBundle\Entity\ReportAnalyticsLocationMetric:
+    location_metric_twitter_followers:
+        name: Followers
+        bundle: @bundle_operation_twitter->name
+    location_metric_facebook_likes:
+        name: Likes
+        bundle: @bundle_operation_facebook->name
 
-\CampaignChain\CoreBundle\Entity\ReportAnalyticsChannelFact:
-    # Campaign 1, Facebook, Metric 1
-    channel_fact_facebook1:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook1
-        value: <numberBetween(100, 10000)>
-        time: @activity_facebook1->startDate
-    channel_fact_facebook{2..10}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook1
+\CampaignChain\CoreBundle\Entity\ReportAnalyticsLocationFact:
+    channel_fact_facebook{1..10}:
+        location: @location_facebook_page
+        metric: @location_metric_facebook_likes
         value: <numberBetween(100, 10000)>
         time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
     channel_fact_facebook{11..20}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook2
+        location: @location_facebook_page
+        metric: @location_metric_facebook_likes
         value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
+        time: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
     channel_fact_facebook{21..30}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook3
+        location: @location_facebook_page
+        metric: @location_metric_facebook_likes
+        value: <numberBetween(100, 10000)>
+        time: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
+    channel_fact_twitter{1..10}:
+        location: @location_twitter
+        metric: @location_metric_twitter_followers
         value: <numberBetween(100, 10000)>
         time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{31..40}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook4
+    channel_fact_twitter{11..20}:
+        location: @location_twitter
+        metric: @location_metric_twitter_followers
         value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{41..50}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook5
+        time: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
+    channel_fact_twitter{21..30}:
+        location: @location_twitter
+        metric: @location_metric_twitter_followers
         value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    # Campaign 1, Facebook, Metric 1
-    channel_fact_facebook{51..60}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook1
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{61..70}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook2
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{71..80}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook3
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{81..90}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook4
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{91..100}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook5
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    # Campaign 1, Facebook, Metric 1
-    channel_fact_facebook{101..110}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook1
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{111..120}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook2
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{121..130}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook3
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{131..140}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook4
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{141..150}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook5
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    # Campaign 1, Facebook, Metric 1
-    channel_fact_facebook{151..160}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook1
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{161..170}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook2
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{171..180}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook3
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{181..190}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook4
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-    channel_fact_facebook{191..200}:
-        channel: @channel_facebook
-        campaign: @campaign1
-        metric: @channel_metric_facebook5
-        value: <numberBetween(100, 10000)>
-        time: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
-
-# TODO: Add some stats for milestones
+        time: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>

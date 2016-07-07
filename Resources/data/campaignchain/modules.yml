@@ -384,6 +384,17 @@
         type: campaignchain-report-analytics
         path: vendor/campaignchain/report-analytics-metrics-per-activity
         class: "CampaignChain\Report\Analytics\MetricsPerActivityBundle\CampaignChainReportAnalyticsMetricsPerActivityBundle"
+    bundle_report_analytics_metrics_per_location:
+        name: campaignchain/report-analytics-metrics-per-location
+        description: Show metrics per location.
+        license: Apache-2.0
+        authors:
+            name: CampaignChain, Inc.
+            email: info@campaignchain.com
+        homepage: http://www.campaignchain.com
+        type: campaignchain-report-analytics
+        path: vendor/campaignchain/report-analytics-metrics-per-location
+        class: "CampaignChain\Report\Analytics\MetricsPerActivityBundle\CampaignChainReportAnalyticsMetricsPerLocationBundle"
     bundle_hook_due:
         name: campaignchain/hook-due
         description: Define the due date of an entity.
@@ -1126,6 +1137,13 @@
         bundle: @bundle_report_analytics_metrics_per_activity
         routes:
             index: campaignchain_report_analytics_metrics_per_activity_index
+    module_config_metrics_per_location:
+        identifier: campaignchain-metrics-per-location
+        displayName: Metrics Per Location
+        description: This report displays charts of statistics collected per location.
+        bundle: @bundle_report_analytics_metrics_per_location
+        routes:
+            index: campaignchain_report_analytics_metrics_per_location_index
     module_config_google_analytics:
         identifier: campaignchain-google-analytics
         displayName: Google Analytics
