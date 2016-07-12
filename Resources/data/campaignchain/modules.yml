@@ -162,7 +162,7 @@
             email: info@campaignchain.com
         homepage: http://www.campaignchain.com
         type: campaignchain-location
-        path: vendor/campaignchain/location-website
+        path: vendor/campaignchain/location-citrix
         class: "CampaignChain\Location\CitrixBundle\CampaignChainLocationCitrixBundle"
     bundle_location_mailchimp:
         name: campaignchain/location-mailchimp
@@ -756,12 +756,26 @@
         bundle: @bundle_location_website
         identifier: campaignchain-website
         displayName: 'Website'
-        services:
-            job_cta: campaignchain.location.website.job.cta
+        channelModules:
+            - @module_config_channel_website
     module_config_location_website_page:
         bundle: @bundle_location_website
         identifier: campaignchain-website-page
         displayName: 'Website page'
+        channelModules:
+            - @module_config_channel_website
+        trackingAlias: a
+        services:
+            job_cta: campaignchain.location.website.page.job.cta
+    module_config_location_website_form:
+        bundle: @bundle_location_website
+        identifier: campaignchain-website-form
+        displayName: 'Form on a Website page'
+        channelModules:
+            - @module_config_channel_website
+        trackingAlias: form
+        services:
+            job_cta: campaignchain.location.website.form.job.cta
     module_config_location_citrix_user:
         bundle: @bundle_location_citrix
         identifier: campaignchain-citrix-user
