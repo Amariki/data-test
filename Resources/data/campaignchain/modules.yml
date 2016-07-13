@@ -723,6 +723,8 @@
         bundle: @bundle_location_twitter
         identifier: campaignchain-twitter-user
         displayName: 'Twitter user stream'
+        channelModules:
+            - @module_config_channel_twitter
         hooks:
             default:
                 campaignchain-assignee: true
@@ -730,10 +732,14 @@
         bundle: @bundle_location_twitter
         identifier: campaignchain-twitter-status
         displayName: 'Twitter post (aka Tweet)'
+        channelModules:
+            - @module_config_channel_twitter
     module_config_location_facebook_user:
         bundle: @bundle_location_facebook
         identifier: campaignchain-facebook-user
         displayName: 'Facebook user stream'
+        channelModules:
+            - @module_config_channel_facebook
         hooks:
             default:
                 campaignchain-assignee: true
@@ -741,6 +747,8 @@
         bundle: @bundle_location_facebook
         identifier: campaignchain-facebook-page
         displayName: 'Facebook page stream'
+        channelModules:
+            - @module_config_channel_facebook
         hooks:
             default:
                 campaignchain-assignee: true
@@ -748,10 +756,14 @@
         bundle: @bundle_location_facebook
         identifier: campaignchain-facebook-status
         displayName: 'Facebook status'
+        channelModules:
+            - @module_config_channel_facebook
     module_config_location_linkedin_user:
         bundle: @bundle_location_linkedin
         identifier: campaignchain-linkedin-user
         displayName: 'LinkedIn user stream'
+        channelModules:
+            - @module_config_channel_linkedin
     module_config_location_website:
         bundle: @bundle_location_website
         identifier: campaignchain-website
@@ -780,45 +792,63 @@
         bundle: @bundle_location_citrix
         identifier: campaignchain-citrix-user
         displayName: 'Citrix user'
+        channelModules:
+            - @module_config_channel_gotowebinar
     module_config_location_gotowebinar:
         bundle: @bundle_location_citrix
         identifier: campaignchain-gotowebinar
         displayName: 'GoToWebinar'
+        channelModules:
+            - @module_config_channel_gotowebinar
     module_config_location_mailchimp_user:
         bundle: @bundle_location_mailchimp
         identifier: campaignchain-mailchimp-user
         displayName: 'MailChimp user'
         description: MailChimp account owner.
+        channelModules:
+            - @module_config_channel_mailchimp
     module_config_location_mailchimp_newsletter:
         bundle: @bundle_location_mailchimp
         identifier: campaignchain-mailchimp-newsletter
         displayName: 'MailChimp newsletter'
         description: The Location of a MailChimp email campaign.
+        channelModules:
+            - @module_config_channel_mailchimp
     module_config_location_slideshare_user:
         bundle: @bundle_location_slideshare
         identifier: campaignchain-slideshare-user
         displayName: 'SlideShare'
         description: Holds information about a SlideShare user.
-    module_config_location_ezplatform_user:
-        bundle: @bundle_location_ezplatform
-        identifier: campaignchain-ezplatform-user
-        displayName: 'eZ Platform User'
-        description: Holds information about an eZ Platform user.
-    module_config_location_ezplatform_user:
-        bundle: @bundle_location_ezplatform
-        identifier: campaignchain-ezplatform-object
-        displayName: 'eZ Platform Content Object'
-        description: Holds information about an eZ Platform content object.
+        channelModules:
+            - @module_config_channel_slideshare
     module_config_location_google_analytics:
         bundle: @bundle_location_google_analytics
         identifier: campaignchain-google-analytics
         displayName: 'Google Analytics Property'
         description: Shows analytics data for a selected web property.
+        channelModules:
+            - @module_config_channel_google_analytics
     module_config_location_xing_user:
         bundle: @bundle_location_xing
         identifier: campaignchain-xing
         displayName: 'Xing'
         description: Holds information about a Xing user.
+        channelModules:
+            - @module_config_channel_xing
+    module_config_location_ezplatform_user:
+        bundle: @bundle_location_ezplatform
+        identifier: campaignchain-ezplatform-user
+        displayName: 'eZ Platform User'
+        description: Holds information about an eZ Platform user.
+        channelModules:
+            - @module_config_channel_ezplatform
+    module_config_location_ezplatform_user:
+        bundle: @bundle_location_ezplatform
+        identifier: campaignchain-ezplatform-object
+        displayName: 'eZ Platform Content Object'
+        description: Holds information about an eZ Platform content object.
+        channelModules:
+            - @module_config_channel_ezplatform
 
 \CampaignChain\CoreBundle\Entity\CampaignModule:
     module_config_campaign_scheduled:
