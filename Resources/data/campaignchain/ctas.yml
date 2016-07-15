@@ -92,9 +92,9 @@
         referrerLocation: @location_facebook_operation1
         referrerUrl: @location_facebook_operation1->url
         referrerName: @activity_facebook1->name
-        sourceLocation: @location_facebook_operation1
-        sourceUrl: @location_facebook_operation1->url
-        sourceName: @activity_facebook1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
         targetLocation: @location_website
         targetUrl: @location_website->url
         targetName: @location_website->name
@@ -157,9 +157,9 @@
         referrerLocation: @location_twitter_operation1
         referrerUrl: @location_twitter_operation1->url
         referrerName: @activity_twitter1->name
-        sourceLocation: @location_twitter_operation1
-        sourceUrl: @location_twitter_operation1->url
-        sourceName: @activity_twitter1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
         targetLocation: @location_website
         targetUrl: @location_website->url
         targetName: @location_website->name
@@ -222,9 +222,9 @@
         referrerLocation: @location_linkedin_operation1
         referrerUrl: @location_linkedin_operation1->url
         referrerName: @activity_linkedin1->name
-        sourceLocation: @location_linkedin_operation1
-        sourceUrl: @location_linkedin_operation1->url
-        sourceName: @activity_linkedin1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
         targetLocation: @location_website
         targetUrl: @location_website->url
         targetName: @location_website->name
@@ -287,9 +287,9 @@
         referrerLocation: @location_xing_operation1
         referrerUrl: @location_xing_operation1->url
         referrerName: @activity_xing1->name
-        sourceLocation: @location_xing_operation1
-        sourceUrl: @location_xing_operation1->url
-        sourceName: @activity_xing1->name
+        sourceLocation: @location_website
+        sourceUrl: @location_website->url
+        sourceName: @location_website->name
         targetLocation: @location_website
         targetUrl: @location_website->url
         targetName: @location_website->name
