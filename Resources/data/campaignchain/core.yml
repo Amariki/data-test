@@ -29,6 +29,12 @@
             repositories-dev:
                 - http://store.campaignchain.com/modules/dev/
 
+\CampaignChain\CoreBundle\Entity\Theme:
+    theme1:
+        name: CampaignChain
+        favicon: theme/favicon.ico
+        logo: theme/logo.png
+
 # Password is "test" for all sample users
 \CampaignChain\CoreBundle\Entity\User:
     fos_user_user:
