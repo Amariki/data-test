@@ -66,6 +66,7 @@
 \CampaignChain\CoreBundle\Entity\Campaign:
     campaign1:
         name: Campaign 1
+        description: <text(100)>
         timezone: <timezone()>
         campaignModule: @module_config_campaign_scheduled
         triggerHook: @module_config_hook_duration
@@ -75,6 +76,7 @@
         assignee: @fos_user_user*
     campaign2:
         name: Campaign 2
+        description: <text(100)>
         timezone: <timezone()>
         campaignModule: @module_config_campaign_scheduled
         triggerHook: @module_config_hook_duration
@@ -84,6 +86,7 @@
         assignee: @fos_user_user*
     campaign3:
         name: Campaign 3
+        description: <text(100)>
         timezone: <timezone()>
         campaignModule: @module_config_campaign_scheduled
         triggerHook: @module_config_hook_duration
@@ -93,6 +96,7 @@
         assignee: @fos_user_user*
     campaign4:
         name: Campaign 4
+        description: <text(100)>
         timezone: <timezone()>
         campaignModule: @module_config_campaign_scheduled
         triggerHook: @module_config_hook_duration
@@ -111,6 +115,7 @@
         assignee: @fos_user_user*
     campaign_template1:
         name: Campaign Template 1
+        description: <text(100)>
         timezone: <timezone()>
         campaignModule: @module_config_campaign_template
         triggerHook: @module_config_hook_timespan
@@ -134,15 +139,15 @@
         assignee: @fos_user_user*
 
 \CampaignChain\CoreBundle\Entity\Milestone:
-    milestone{1..3}:
-        name: Milestone <current()>
+    milestone{1..20}:
+        name: <text(20)> <current()>
         campaign: @campaign1
         milestoneModule: @module_config_milestone_scheduled
         triggerHook: @module_config_hook_due
         startDate: <dateTimeBetween(@campaign1->startDate, @campaign1->endDate)>
         status: closed
         assignee: @fos_user_user*
-    milestone{4..6}:
+    milestone{40..46}:
         name: Milestone <current()>
         campaign: @campaign2
         milestoneModule: @module_config_milestone_scheduled
@@ -150,7 +155,7 @@
         startDate: <dateTimeBetween(@campaign2->startDate, @campaign2->endDate)>
         status: open
         assignee: @fos_user_user*
-    milestone{7..9}:
+    milestone{47..49}:
         name: Milestone <current()>
         campaign: @campaign3
         milestoneModule: @module_config_milestone_scheduled
@@ -158,7 +163,7 @@
         startDate: <dateTimeBetween(@campaign3->startDate, @campaign3->endDate)>
         status: open
         assignee: @fos_user_user*
-    milestone{10..12}:
+    milestone{50..52}:
         name: Milestone <current()>
         campaign: @campaign4
         milestoneModule: @module_config_milestone_scheduled
@@ -166,7 +171,7 @@
         startDate: <dateTimeBetween(@campaign4->startDate, @campaign4->endDate)>
         status: open
         assignee: @fos_user_user*
-    milestone{13..15}:
+    milestone{53..55}:
         name: Milestone <current()>
         campaign: @campaign_template1
         milestoneModule: @module_config_milestone_scheduled
@@ -174,7 +179,7 @@
         startDate: <dateTimeBetween(@campaign_template1->startDate, @campaign_template1->endDate)>
         status: paused
         assignee: @fos_user_user*
-    milestone{16..18}:
+    milestone{56..58}:
         name: Milestone <current()>
         campaign: @campaign_repeating1
         milestoneModule: @module_config_milestone_scheduled
