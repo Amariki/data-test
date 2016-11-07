@@ -429,10 +429,11 @@
 \CampaignChain\Location\GoogleAnalyticsBundle\Entity\Profile:
     location_google_analytics_profile1:
         location: @location_google_analytics_wordpress_amariki_com
-        identifier: http://wordpress.amariki.com
+        identifier: 112044954
         displayName: Amariki Wordpress
         accountId: 70347540
-        profileId: UA-70347540-1
+        propertyId: UA-70347540-1
+        profileId: 112044954
         segment: 0
         metrics:
             - ga:sessions

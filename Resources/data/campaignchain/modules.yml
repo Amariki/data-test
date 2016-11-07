@@ -723,7 +723,7 @@
         description: Provides a channel for Google Analytics
         displayName: 'Google Analytics'
         routes:
-            new: campaignchain_channel_ezplatform_new
+            new: campaignchain_channel_google_analytics_create
     module_config_channel_xing:
         bundle: @bundle_channel_xing
         identifier: campaignchain-xing
