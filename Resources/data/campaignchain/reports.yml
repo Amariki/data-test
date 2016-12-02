@@ -207,10 +207,16 @@
 \CampaignChain\CoreBundle\Entity\ReportAnalyticsLocationMetric:
     location_metric_twitter_followers:
         name: Followers
-        bundle: @bundle_operation_twitter->name
+        bundle: @bundle_location_twitter->name
     location_metric_facebook_likes:
         name: Likes
-        bundle: @bundle_operation_facebook->name
+        bundle: @bundle_location_facebook->name
+    location_metric_facebook_friends:
+        name: Friends
+        bundle: @bundle_location_facebook->name
+    location_metric_facebook_fans:
+        name: Fans
+        bundle: @bundle_location_facebook->name
 
 \CampaignChain\CoreBundle\Entity\ReportAnalyticsLocationFact:
     channel_fact_facebook{1..10}:
