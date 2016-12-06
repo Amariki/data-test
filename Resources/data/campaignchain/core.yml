@@ -285,7 +285,7 @@
         URL: https://www.facebook.com/profile.php?id=100008874400259
     location_citrix:
         name: Amariki Webinars
-        identifier: 5484354468050484741
+        identifier: 7399138589491308549
         locationModule: @module_config_location_citrix_user
         channel: @channel_gotowebinar
         status: active
@@ -391,7 +391,7 @@
 \CampaignChain\Location\CitrixBundle\Entity\CitrixUser:
     location_citrix_user1:
         location: @location_citrix
-        identifier: 5484354468050484741
+        identifier: 7399138589491308549
         displayName: Amariki Webinars
         firstName: Amariki
         email: test1@amariki.com
