@@ -983,6 +983,7 @@
             edit_modal: campaignchain_activity_facebook_publish_status_edit_modal
             edit_api: campaignchain_activity_facebook_publish_status_edit_api
             read: campaignchain_activity_facebook_publish_status_read
+            read_modal: campaignchain_activity_facebook_publish_status_read_modal
         hooks:
             default:
                 campaignchain-due: true
@@ -1000,6 +1001,7 @@
             edit_modal: campaignchain_activity_twitter_update_status_edit_modal
             edit_api: campaignchain_activity_twitter_update_status_edit_api
             read: campaignchain_activity_twitter_update_status_read
+            read_modal: campaignchain_activity_twitter_update_status_read_modal
         hooks:
             default:
                 campaignchain-due: true
@@ -1017,6 +1019,7 @@
             edit_modal: campaignchain_activity_linkedin_share_news_item_edit_modal
             edit_api: campaignchain_activity_linkedin_share_news_item_edit_api
             read: campaignchain_activity_linkedin_share_news_item_read
+            read_modal: campaignchain_activity_linkedin_share_news_item_read_modal
         hooks:
             default:
                 campaignchain-due: true
@@ -1034,6 +1037,7 @@
             edit_modal: campaignchain_activity_gotowebinar_edit_modal
             edit_api:
             read: campaignchain_activity_gotowebinar_read
+            read_modal: campaignchain_activity_gotowebinar_read_modal
         hooks:
             default:
                 campaignchain-assignee: true
@@ -1049,6 +1053,7 @@
             edit_modal: campaignchain_activity_mailchimp_edit_modal
             edit_api: campaignchain_activity_mailchimp_edit_api
             read: campaignchain_activity_mailchimp_read
+            read_modal: campaignchain_activity_mailchimp_read_modal
         hooks:
             default:
                 campaignchain-due: true
@@ -1065,25 +1070,10 @@
             edit_modal: campaignchain_activity_slideshare_edit_modal
             edit_api: campaignchain_activity_slideshare_edit_api
             read: campaignchain_activity_slideshare_read
+            read_modal: campaignchain_activity_slideshare_read_modal
         hooks:
             default:
                 campaignchain-due: true
-    module_config_activity_ezplatform:
-        bundle: @bundle_activity_ezplatform
-        channelModules:
-            - @module_config_channel_ezplatform
-        identifier: campaignchain-ezplatform-schedule
-        displayName: 'Schedule eZ Platform content'
-        routes:
-            new: campaignchain_activity_ezplatform_schedule_new
-            edit: campaignchain_activity_ezplatform_schedule_edit
-            edit_modal: campaignchain_activity_ezplatform_schedule_edit_modal
-            edit_api: campaignchain_activity_ezplatform_schedule_edit_api
-            read: campaignchain_activity_ezplatform_schedule_read
-        hooks:
-            default:
-                campaignchain-due: true
-                campaignchain-assignee: true
     module_config_activity_xing:
         bundle: @bundle_activity_xing
         channelModules:
@@ -1096,6 +1086,7 @@
             edit_modal: campaignchain_activity_xing_edit_modal
             edit_api: campaignchain_activity_xing_edit_api
             read: campaignchain_activity_xing_read
+            read_modal: campaignchain_activity_xing_read_modal
         hooks:
             default:
                 campaignchain-due: true
