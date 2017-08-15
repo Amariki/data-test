@@ -23,7 +23,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-core
         path: vendor/campaignchain/core
-        class: "CampaignChain\CoreBundle\CampaignChainCoreBundle"
+        class: "CampaignChain\\CoreBundle\\CampaignChainCoreBundle"
     bundle_distribution:
         name: campaignchain/distribution-ce
         description: Community Edition of CampaignChain.
@@ -34,7 +34,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-distribution
         path: vendor/campaignchain/distribution-ce
-        class: "CampaignChain\DistributionCeBundle\CampaignChainDistributionCeBundle"
+        class: "CampaignChain\\DistributionCeBundle\\CampaignChainDistributionCeBundle"
     bundle_security_authentication_client_oauth:
         name: campaignchain/security-authentication-client-oauth
         description: OAuth client to be used by channel modules.
@@ -45,7 +45,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-security
         path: vendor/campaignchain/security-authentication-client-oauth
-        class: "CampaignChain\Security\Authentication\Client\OAuthBundle\CampaignChainSecurityAuthenticationClientOAuthBundle"
+        class: "CampaignChain\\Security\\Authentication\\Client\\OAuthBundle\\CampaignChainSecurityAuthenticationClientOAuthBundle"
     bundle_channel_facebook:
         name: campaignchain/channel-facebook
         description: Connect with Facebook.
@@ -56,7 +56,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-facebook
-        class: "CampaignChain\Channel\FacebookBundle\CampaignChainChannelFacebookBundle"
+        class: "CampaignChain\\Channel\\FacebookBundle\\CampaignChainChannelFacebookBundle"
     bundle_channel_twitter:
         name: campaignchain/channel-twitter
         description: Connect with Twitter.
@@ -67,7 +67,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-twitter
-        class: "CampaignChain\Channel\TwitterBundle\CampaignChainChannelTwitterBundle"
+        class: "CampaignChain\\Channel\\TwitterBundle\\CampaignChainChannelTwitterBundle"
     bundle_channel_linkedin:
         name: campaignchain/channel-linkedin
         description: Connect with LinkedIn.
@@ -78,7 +78,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-linkedin
-        class: "CampaignChain\Channel\LinkedInBundle\CampaignChainChannelLinkedInBundle"
+        class: "CampaignChain\\Channel\\LinkedInBundle\\CampaignChainChannelLinkedInBundle"
     bundle_channel_website:
         name: campaignchain/channel-website
         description: Connect with a Website.
@@ -89,7 +89,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-website
-        class: "CampaignChain\Channel\WebsiteBundle\CampaignChainChannelWebsiteBundle"
+        class: "CampaignChain\\Channel\\WebsiteBundle\\CampaignChainChannelWebsiteBundle"
     bundle_channel_citrix:
         name: campaignchain/channel-citrix
         description: Connects to Citrix services such as GoToMeeting or GoToWebinar.
@@ -100,7 +100,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-citrix
-        class: "CampaignChain\Channel\CitrixBundle\CampaignChainChannelCitrixBundle"
+        class: "CampaignChain\\Channel\\CitrixBundle\\CampaignChainChannelCitrixBundle"
     bundle_channel_mailchimp:
         name: campaignchain/channel-mailchimp
         description: Connects to MailChimp.
@@ -111,7 +111,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-mailchimp
-        class: "CampaignChain\Channel\MailChimpBundle\CampaignChainChannelMailChimpBundle"
+        class: "CampaignChain\\Channel\\MailChimpBundle\\CampaignChainChannelMailChimpBundle"
     bundle_channel_slideshare:
         name: campaignchain/channel-slideshare
         description: Connects to SlideShare.
@@ -122,7 +122,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-slideshare
-        class: "CampaignChain\Channel\SlideShareBundle\CampaignChainChannelSlideShareBundle"
+        class: "CampaignChain\\Channel\\SlideShareBundle\\CampaignChainChannelSlideShareBundle"
     bundle_location_twitter:
         name: campaignchain/location-twitter
         description: Integrates Twitter locations such as user stream and status.
@@ -133,7 +133,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-twitter
-        class: "CampaignChain\Location\TwitterBundle\CampaignChainLocationTwitterBundle"
+        class: "CampaignChain\\Location\\TwitterBundle\\CampaignChainLocationTwitterBundle"
     bundle_location_linkedin:
         name: campaignchain/location-linkedin
         description: LinkedIn user stream.
@@ -144,7 +144,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-linkedin
-        class: "CampaignChain\Location\LinkedInBundle\CampaignChainLocationLinkedInBundle"
+        class: "CampaignChain\\Location\\LinkedInBundle\\CampaignChainLocationLinkedInBundle"
     bundle_location_facebook:
         name: campaignchain/location-facebook
         description: Facebook user and page stream.
@@ -155,7 +155,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-facebook
-        class: "CampaignChain\Location\FacebookBundle\CampaignChainLocationFacebookBundle"
+        class: "CampaignChain\\Location\\FacebookBundle\\CampaignChainLocationFacebookBundle"
     bundle_location_website:
         name: campaignchain/location-website
         description: Simple module that connects a Website and to define its pages as CampaignChain Locations.
@@ -166,7 +166,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-website
-        class: "CampaignChain\Location\WebsiteBundle\CampaignChainLocationWebsiteBundle"
+        class: "CampaignChain\\Location\\WebsiteBundle\\CampaignChainLocationWebsiteBundle"
     bundle_location_citrix:
         name: campaignchain/location-citrix
         description: Holds information about a Citrix Location and user.
@@ -177,7 +177,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-citrix
-        class: "CampaignChain\Location\CitrixBundle\CampaignChainLocationCitrixBundle"
+        class: "CampaignChain\\Location\\CitrixBundle\\CampaignChainLocationCitrixBundle"
     bundle_location_mailchimp:
         name: campaignchain/location-mailchimp
         description: MailChimp account owner and newsletter Location.
@@ -188,7 +188,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-mailchimp
-        class: "CampaignChain\Location\MailChimpBundle\CampaignChainLocationMailChimpBundle"
+        class: "CampaignChain\\Location\\MailChimpBundle\\CampaignChainLocationMailChimpBundle"
     bundle_location_slideshare:
         name: campaignchain/location-slideshare
         description: Holds information about a SlideShare user.
@@ -199,7 +199,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-slideshare
-        class: "CampaignChain\Location\SlideShareBundle\CampaignChainLocationSlideShareBundle"
+        class: "CampaignChain\\Location\\SlideShareBundle\\CampaignChainLocationSlideShareBundle"
     bundle_campaign_scheduled:
         name: campaignchain/campaign-scheduled
         description: A campaign with a start and end date.
@@ -210,7 +210,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-campaign
         path: vendor/campaignchain/campaign-scheduled
-        class: "CampaignChain\Campaign\ScheduledCampaignBundle\CampaignChainCampaignScheduledCampaignBundle"
+        class: "CampaignChain\\Campaign\\ScheduledCampaignBundle\\CampaignChainCampaignScheduledCampaignBundle"
     bundle_campaign_template:
         name: campaignchain/campaign-template
         description: Create re-usable templates of campaigns.
@@ -221,7 +221,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-campaign
         path: vendor/campaignchain/campaign-template
-        class: "CampaignChain\Campaign\TemplateBundle\CampaignChainCampaignTemplateBundle"
+        class: "CampaignChain\\Campaign\\TemplateBundle\\CampaignChainCampaignTemplateBundle"
     bundle_campaign_repeating:
         name: campaignchain/campaign-repeating
         description: A campaign that is being repeated automatically.
@@ -232,7 +232,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-campaign
         path: vendor/campaignchain/campaign-repeating
-        class: "CampaignChain\Campaign\RepeatingBundle\CampaignChainCampaignRepeatingBundle"
+        class: "CampaignChain\\Campaign\\RepeatingBundle\\CampaignChainCampaignRepeatingBundle"
     bundle_milestone_scheduled:
         name: campaignchain/milestone-scheduled
         description: A milestone with a due date.
@@ -243,7 +243,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-milestone
         path: vendor/campaignchain/milestone-scheduled
-        class: "CampaignChain\Milestone\ScheduledMilestoneBundle\CampaignChainMilestoneScheduledMilestoneBundle"
+        class: "CampaignChain\\Milestone\\ScheduledMilestoneBundle\\CampaignChainMilestoneScheduledMilestoneBundle"
     bundle_activity_facebook:
         name: campaignchain/activity-facebook
         description: Collection of various Facebook activities, such as post or share a message.
@@ -254,7 +254,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-facebook
-        class: "CampaignChain\Activity\FacebookBundle\CampaignChainActivityFacebookBundle"
+        class: "CampaignChain\\Activity\\FacebookBundle\\CampaignChainActivityFacebookBundle"
     bundle_activity_twitter:
         name: campaignchain/activity-twitter
         description: Collection of various Twitter activities, such as tweeting and re-tweeting.
@@ -265,7 +265,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-twitter
-        class: "CampaignChain\Activity\TwitterBundle\CampaignChainActivityTwitterBundle"
+        class: "CampaignChain\\Activity\\TwitterBundle\\CampaignChainActivityTwitterBundle"
     bundle_activity_linkedin:
         name: campaignchain/activity-linkedin
         description: Collection of various LinkedIn activities, such as tweeting and re-tweeting.
@@ -276,7 +276,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-linkedin
-        class: "CampaignChain\Activity\LinkedInBundle\CampaignChainActivityLinkedInBundle"
+        class: "CampaignChain\\Activity\\LinkedInBundle\\CampaignChainActivityLinkedInBundle"
     bundle_activity_gotowebinar:
         name: campaignchain/activity-gotowebinar
         description: Include a Webinar into a campaign.
@@ -287,7 +287,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-gotowebinar
-        class: "CampaignChain\Activity\GoToWebinarBundle\CampaignChainActivityGoToWebinarBundle"
+        class: "CampaignChain\\Activity\\GoToWebinarBundle\\CampaignChainActivityGoToWebinarBundle"
     bundle_activity_mailchimp:
         name: campaignchain/activity-mailchimp
         description: Add upcoming newsletter campaign
@@ -298,7 +298,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-mailchimp
-        class: "CampaignChain\Activity\MailChimpBundle\CampaignChainActivityMailChimpBundle"
+        class: "CampaignChain\\Activity\\MailChimpBundle\\CampaignChainActivityMailChimpBundle"
     bundle_activity_slideshare:
         name: campaignchain/activity-slideshare
         description: Include a slide into a campaign.
@@ -309,7 +309,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-slideshare
-        class: "CampaignChain\Activity\SlideShareBundle\CampaignChainActivitySlideShareBundle"
+        class: "CampaignChain\\Activity\\SlideShareBundle\\CampaignChainActivitySlideShareBundle"
     bundle_operation_facebook:
         name: campaignchain/operation-facebook
         description: Collection of various Facebook operations.
@@ -320,7 +320,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-facebook
-        class: "CampaignChain\Operation\FacebookBundle\CampaignChainOperationFacebookBundle"
+        class: "CampaignChain\\Operation\\FacebookBundle\\CampaignChainOperationFacebookBundle"
     bundle_operation_twitter:
         name: campaignchain/operation-twitter
         description: Collection of various Twitter operations.
@@ -331,7 +331,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-twitter
-        class: "CampaignChain\Operation\TwitterBundle\CampaignChainOperationTwitterBundle"
+        class: "CampaignChain\\Operation\\TwitterBundle\\CampaignChainOperationTwitterBundle"
     bundle_operation_linkedin:
         name: campaignchain/operation-linkedin
         description: Collection of various LinkedIn operations.
@@ -342,7 +342,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-linkedin
-        class: "CampaignChain\Operation\LinkedInBundle\CampaignChainOperationLinkedInBundle"
+        class: "CampaignChain\\Operation\\LinkedInBundle\\CampaignChainOperationLinkedInBundle"
     bundle_operation_gotowebinar:
         name: campaignchain/operation-gotowebinar
         description: Include a Webinar into a campaign.
@@ -353,7 +353,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-gotowebinar
-        class: "CampaignChain\Operation\GoToWebinarBundle\CampaignChainOperationGoToWebinarBundle"
+        class: "CampaignChain\\Operation\\GoToWebinarBundle\\CampaignChainOperationGoToWebinarBundle"
     bundle_operation_mailchimp:
         name: campaignchain/operation-mailchimp
         description: Add upcoming newsletter campaign
@@ -364,7 +364,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-mailchimp
-        class: "CampaignChain\Operation\MailChimpBundle\CampaignChainOperationMailChimpBundle"
+        class: "CampaignChain\\Operation\\MailChimpBundle\\CampaignChainOperationMailChimpBundle"
     bundle_operation_slideshare:
         name: campaignchain/operation-slideshare
         description: Include a Webinar into a campaign.
@@ -375,7 +375,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-slideshare
-        class: "CampaignChain\Operation\SlideShareBundle\CampaignChainOperationSlideShareBundle"
+        class: "CampaignChain\\Operation\\SlideShareBundle\\CampaignChainOperationSlideShareBundle"
     bundle_report_analytics_cta_tracking:
         name: campaignchain/report-analytics-cta-tracking
         description: Shows inbound and outbound Calls-to-Action for a Location.
@@ -386,7 +386,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-report-analytics
         path: vendor/campaignchain/report-analytics-cta-tracking
-        class: "CampaignChain\Report\AnalyticsCtaTrackingBundle\CampaignChainReportAnalyticsCtaTrackingBundle"
+        class: "CampaignChain\\Report\\AnalyticsCtaTrackingBundle\\CampaignChainReportAnalyticsCtaTrackingBundle"
     bundle_report_analytics_metrics_per_activity:
         name: campaignchain/report-analytics-metrics-per-activity
         description: Show metrics per activity.
@@ -397,7 +397,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-report-analytics
         path: vendor/campaignchain/report-analytics-metrics-per-activity
-        class: "CampaignChain\Report\Analytics\MetricsPerActivityBundle\CampaignChainReportAnalyticsMetricsPerActivityBundle"
+        class: "CampaignChain\\Report\\Analytics\\MetricsPerActivityBundle\\CampaignChainReportAnalyticsMetricsPerActivityBundle"
     bundle_report_analytics_metrics_per_location:
         name: campaignchain/report-analytics-metrics-per-location
         description: Show metrics per location.
@@ -408,7 +408,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-report-analytics
         path: vendor/campaignchain/report-analytics-metrics-per-location
-        class: "CampaignChain\Report\Analytics\MetricsPerActivityBundle\CampaignChainReportAnalyticsMetricsPerLocationBundle"
+        class: "CampaignChain\\Report\\Analytics\\MetricsPerActivityBundle\\CampaignChainReportAnalyticsMetricsPerLocationBundle"
     bundle_hook_due:
         name: campaignchain/hook-due
         description: Define the due date of an entity.
@@ -419,7 +419,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-due
-        class: "CampaignChain\Hook\DueBundle\CampaignChainHookDueBundle"
+        class: "CampaignChain\\Hook\\DueBundle\\CampaignChainHookDueBundle"
     bundle_hook_duration:
         name: campaignchain/hook-duration
         description: Define the start and end date of an entity.
@@ -430,7 +430,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-duration
-        class: "CampaignChain\Hook\DurationBundle\CampaignChainHookDurationBundle"
+        class: "CampaignChain\\Hook\\DurationBundle\\CampaignChainHookDurationBundle"
     bundle_hook_assignee:
         name: campaignchain/hook-assignee
         description: Assign a responsible user to an entity.
@@ -441,7 +441,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-assignee
-        class: "CampaignChain\Hook\AssigneeBundle\CampaignChainHookAssigneeBundle"
+        class: "CampaignChain\\Hook\\AssigneeBundle\\CampaignChainHookAssigneeBundle"
     bundle_hook_timespan:
         name: campaignchain/hook-timespan
         description: Define the timespan of an entity.
@@ -452,7 +452,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-timespan
-        class: "CampaignChain\Hook\TimespanBundle\CampaignChainHookTimespanBundle"
+        class: "CampaignChain\\Hook\\TimespanBundle\\CampaignChainHookTimespanBundle"
     bundle_hook_date_repeat:
         name: campaignchain/hook-date-repeat
         description: Define the repeating dates of an entity.
@@ -463,7 +463,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-date-repeat
-        class: "CampaignChain\Hook\DateRepeatBundle\CampaignChainHookDateRepeatBundle"
+        class: "CampaignChain\\Hook\\DateRepeatBundle\\CampaignChainHookDateRepeatBundle"
     bundle_hook_image:
         name: campaignchain/hook-image
         description: Upload one or more Images for an Activity.
@@ -474,7 +474,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-hook
         path: vendor/campaignchain/hook-image
-        class: "CampaignChain\Hook\ImageBundle\CampaignChainHookImageBundle"
+        class: "CampaignChain\\Hook\\ImageBundle\\CampaignChainHookImageBundle"
     bundle_activity_ezplatform:
         name: campaignchain/activity-ezplatform
         description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
@@ -485,7 +485,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-ezplatform
-        class: "CampaignChain\Activity\EZPlatformBundle\CampaignChainActivityEZPlatformBundle"
+        class: "CampaignChain\\Activity\\EZPlatformBundle\\CampaignChainActivityEZPlatformBundle"
     bundle_location_ezplatform:
         name: campaignchain/location-ezplatform
         description: Holds information about eZ Platform users and content objects.
@@ -496,7 +496,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-ezplatform
-        class: "CampaignChain\Location\EZPlatformBundle\CampaignChainLocationEZPlatformBundle"
+        class: "CampaignChain\\Location\\EZPlatformBundle\\CampaignChainLocationEZPlatformBundle"
     bundle_operation_ezplatform:
         name: campaignchain/operation-ezplatform
         description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
@@ -507,7 +507,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-ezplatform
-        class: "CampaignChain\Operation\EZPlatformBundle\CampaignChainOperationEZPlatformBundle"
+        class: "CampaignChain\\Operation\\EZPlatformBundle\\CampaignChainOperationEZPlatformBundle"
     bundle_channel_ezplatform:
         name: campaignchain/channel-ezplatform
         description: Connects to eZ Platform's REST API.
@@ -518,7 +518,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-ezplatform
-        class: "CampaignChain\Channel\EZPlatformBundle\CampaignChainChannelEZPlatformBundle"
+        class: "CampaignChain\\Channel\\EZPlatformBundle\\CampaignChainChannelEZPlatformBundle"
     bundle_security_authentication_server_oauth:
         name: campaignchain/security-authentication-server-oauth
         description: OAuth server to authenticate against to use built-in REST API.
@@ -529,7 +529,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-security
         path: vendor/campaignchain/security-authentication-server-oauth
-        class: "CampaignChain\Security\Authentication\Server\OAuthBundle\CampaignChainSecurityAuthenticationServerOAuthBundle"
+        class: "CampaignChain\\Security\\Authentication\\Server\\OAuthBundle\\CampaignChainSecurityAuthenticationServerOAuthBundle"
     bundle_channel_google_analytics:
         name: campaignchain/channel-google-analytics
         description: Connect with Google Analytics
@@ -540,7 +540,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-google-analytics
-        class: "CampaignChain\Channel\GoogleAnalyticsBundle\CampaignChainChannelGoogleAnalyticsBundle"
+        class: "CampaignChain\\Channel\\GoogleAnalyticsBundle\\CampaignChainChannelGoogleAnalyticsBundle"
     bundle_location_google_analytics:
         name: campaignchain/location-google-analytics
         description: Google Analytics Integration
@@ -551,7 +551,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-google-analytics
-        class: "CampaignChain\Location\GoogleAnalyticsBundle\CampaignChainLocationGoogleAnalyticsBundle"
+        class: "CampaignChain\\Location\\GoogleAnalyticsBundle\\CampaignChainLocationGoogleAnalyticsBundle"
     bundle_report_google_analytics:
         name: campaignchain/report-google-analytics
         description: Access Google Analytics Data
@@ -562,7 +562,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-report
         path: vendor/campaignchain/report-google-analytics
-        class: "CampaignChain\Report\GoogleAnalyticsBundle\CampaignChainReportGoogleAnalyticsBundle"
+        class: "CampaignChain\\Report\\GoogleAnalyticsBundle\\CampaignChainReportGoogleAnalyticsBundle"
     bundle_channel_xing:
         name: campaignchain/channel-xing
         description: Connect with Xing.
@@ -573,7 +573,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-channel
         path: vendor/campaignchain/channel-xing
-        class: "CampaignChain\Channel\XingBundle\CampaignChainChannelXingBundle"
+        class: "CampaignChain\\Channel\\XingBundle\\CampaignChainChannelXingBundle"
     bundle_location_xing:
         name: campaignchain/location-xing
         description: Holds information about a Xing user.
@@ -584,7 +584,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-location
         path: vendor/campaignchain/location-xing
-        class: "CampaignChain\Location\XingBundle\CampaignChainLocationXingBundle"
+        class: "CampaignChain\\Location\\XingBundle\\CampaignChainLocationXingBundle"
     bundle_activity_xing:
         name: campaignchain/activity-xing
         description: Post a message on Xing.
@@ -595,7 +595,7 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-activity
         path: vendor/campaignchain/activity-xing
-        class: "CampaignChain\Activity\XingBundle\CampaignChainActivityXingBundle"
+        class: "CampaignChain\\Activity\\XingBundle\\CampaignChainActivityXingBundle"
     bundle_operation_xing:
         name: campaignchain/operation-xing
         description: Post a message on Xing.
@@ -606,11 +606,11 @@
         homepage: http://www.campaignchain.com
         type: campaignchain-operation
         path: vendor/campaignchain/operation-xing
-        class: "CampaignChain\Operation\XingBundle\CampaignChainOperationXingBundle"
+        class: "CampaignChain\\Operation\\XingBundle\\CampaignChainOperationXingBundle"
 
 \CampaignChain\CoreBundle\Entity\Hook:
     module_config_hook_due:
-        bundle: @bundle_hook_due
+        bundle: "@bundle_hook_due"
         identifier: campaignchain-due
         label: Due
         services:
@@ -618,9 +618,9 @@
             entity: campaignchain.hook.campaignchain.due
             event_subscriber: campaignchain.hook.listener.campaignchain.due
         type: trigger
-        entityClass: CampaignChain\Hook\DueBundle\Entity\Due
+        entityClass: "CampaignChain\\Hook\\DueBundle\\Entity\\Due"
     module_config_hook_duration:
-        bundle: @bundle_hook_duration
+        bundle: "@bundle_hook_duration"
         identifier: campaignchain-duration
         label: Duration
         services:
@@ -629,7 +629,7 @@
             event_subscriber: campaignchain.hook.listener.campaignchain.duration
         type: trigger
     module_config_hook_assignee:
-        bundle: @bundle_hook_assignee
+        bundle: "@bundle_hook_assignee"
         identifier: campaignchain-assignee
         label: Assignee
         services:
@@ -637,7 +637,7 @@
             entity: campaignchain.hook.campaignchain.assignee
         type: default
     module_config_hook_timespan:
-        bundle: @bundle_hook_timespan
+        bundle: "@bundle_hook_timespan"
         identifier: campaignchain-timespan
         label: Timespan
         services:
@@ -646,7 +646,7 @@
             event_subscriber: campaignchain.hook.listener.campaignchain.timespan
         type: trigger
     module_config_hook_date_repeat:
-        bundle: @bundle_hook_date_repeat
+        bundle: "@bundle_hook_date_repeat"
         identifier: campaignchain-date-repeat
         label: Repeat
         services:
@@ -655,7 +655,7 @@
             event_subscriber: campaignchain.hook.listener.campaignchain.date_repeat
         type: default
     module_config_hook_image:
-        bundle: @bundle_hook_image
+        bundle: "@bundle_hook_image"
         identifier: campaignchain-image
         label: Image
         services:
@@ -665,25 +665,25 @@
 
 \CampaignChain\CoreBundle\Entity\ChannelModule:
     module_config_channel_facebook:
-        bundle: @bundle_channel_facebook
+        bundle: "@bundle_channel_facebook"
         identifier: campaignchain-facebook
         displayName: 'Facebook'
         routes:
             new: campaignchain_channel_facebook_create
     module_config_channel_twitter:
-        bundle: @bundle_channel_twitter
+        bundle: "@bundle_channel_twitter"
         identifier: campaignchain-twitter
         displayName: 'Twitter'
         routes:
             new: campaignchain_channel_twitter_create
     module_config_channel_linkedin:
-        bundle: @bundle_channel_linkedin
+        bundle: "@bundle_channel_linkedin"
         identifier: campaignchain-linkedin
         displayName: 'LinkedIn'
         routes:
             new: campaignchain_channel_linkedin_create
     module_config_channel_website:
-        bundle: @bundle_channel_website
+        bundle: "@bundle_channel_website"
         identifier: campaignchain-website
         displayName: 'Website'
         routes:
@@ -691,41 +691,41 @@
         params:
             cta_tracking: true
     module_config_channel_gotowebinar:
-        bundle: @bundle_channel_citrix
+        bundle: "@bundle_channel_citrix"
         identifier: campaignchain-gotowebinar
         displayName: 'GoToWebinar'
         routes:
             new: campaignchain_channel_gotowebinar_create
     module_config_channel_mailchimp:
-        bundle: @bundle_channel_mailchimp
+        bundle: "@bundle_channel_mailchimp"
         identifier: campaignchain-mailchimp
         description: Connects to MailChimp.
         displayName: 'MailChimp'
         routes:
             new: campaignchain_channel_mailchimp_create
     module_config_channel_slideshare:
-        bundle: @bundle_channel_slideshare
+        bundle: "@bundle_channel_slideshare"
         identifier: campaignchain-slideshare
         description: Connects to SlideShare.
         displayName: 'SlideShare'
         routes:
             new: campaignchain_channel_slideshare_create
     module_config_channel_ezplatform:
-        bundle: @bundle_channel_ezplatform
+        bundle: "@bundle_channel_ezplatform"
         identifier: campaignchain-ezplatform
         description: Connects to eZ Platform's REST API
         displayName: 'eZ Platform'
         routes:
             new: campaignchain_channel_ezplatform_new
     module_config_channel_google_analytics:
-        bundle: @bundle_channel_google_analytics
+        bundle: "@bundle_channel_google_analytics"
         identifier: campaignchain-google-analytics
         description: Provides a channel for Google Analytics
         displayName: 'Google Analytics'
         routes:
             new: campaignchain_channel_google_analytics_create
     module_config_channel_xing:
-        bundle: @bundle_channel_xing
+        bundle: "@bundle_channel_xing"
         identifier: campaignchain-xing
         description: Connects to Xing.
         displayName: 'Xing'
@@ -734,139 +734,139 @@
 
 \CampaignChain\CoreBundle\Entity\LocationModule:
     module_config_location_twitter_user:
-        bundle: @bundle_location_twitter
+        bundle: "@bundle_location_twitter"
         identifier: campaignchain-twitter-user
         displayName: 'Twitter user stream'
         channelModules:
-            - @module_config_channel_twitter
+            - "@module_config_channel_twitter"
         hooks:
             default:
                 campaignchain-assignee: true
     module_config_location_twitter_status:
-        bundle: @bundle_location_twitter
+        bundle: "@bundle_location_twitter"
         identifier: campaignchain-twitter-status
         displayName: 'Twitter post (aka Tweet)'
         channelModules:
-            - @module_config_channel_twitter
+            - "@module_config_channel_twitter"
     module_config_location_facebook_user:
-        bundle: @bundle_location_facebook
+        bundle: "@bundle_location_facebook"
         identifier: campaignchain-facebook-user
         displayName: 'Facebook user stream'
         channelModules:
-            - @module_config_channel_facebook
+            - "@module_config_channel_facebook"
         hooks:
             default:
                 campaignchain-assignee: true
     module_config_location_facebook_page:
-        bundle: @bundle_location_facebook
+        bundle: "@bundle_location_facebook"
         identifier: campaignchain-facebook-page
         displayName: 'Facebook page stream'
         channelModules:
-            - @module_config_channel_facebook
+            - "@module_config_channel_facebook"
         hooks:
             default:
                 campaignchain-assignee: true
     module_config_location_facebook_status:
-        bundle: @bundle_location_facebook
+        bundle: "@bundle_location_facebook"
         identifier: campaignchain-facebook-status
         displayName: 'Facebook status'
         channelModules:
-            - @module_config_channel_facebook
+            - "@module_config_channel_facebook"
     module_config_location_linkedin_user:
-        bundle: @bundle_location_linkedin
+        bundle: "@bundle_location_linkedin"
         identifier: campaignchain-linkedin-user
         displayName: 'LinkedIn user stream'
         channelModules:
-            - @module_config_channel_linkedin
+            - "@module_config_channel_linkedin"
     module_config_location_website:
-        bundle: @bundle_location_website
+        bundle: "@bundle_location_website"
         identifier: campaignchain-website
         displayName: 'Website'
         channelModules:
-            - @module_config_channel_website
+            - "@module_config_channel_website"
     module_config_location_website_page:
-        bundle: @bundle_location_website
+        bundle: "@bundle_location_website"
         identifier: campaignchain-website-page
         displayName: 'Website page'
         channelModules:
-            - @module_config_channel_website
+            - "@module_config_channel_website"
         trackingAlias: a
         services:
             job_cta: campaignchain.location.website.page.job.cta
     module_config_location_website_form:
-        bundle: @bundle_location_website
+        bundle: "@bundle_location_website"
         identifier: campaignchain-website-form
         displayName: 'Form on a Website page'
         channelModules:
-            - @module_config_channel_website
+            - "@module_config_channel_website"
         trackingAlias: form
         services:
             job_cta: campaignchain.location.website.form.job.cta
     module_config_location_citrix_user:
-        bundle: @bundle_location_citrix
+        bundle: "@bundle_location_citrix"
         identifier: campaignchain-citrix-user
         displayName: 'Citrix user'
         channelModules:
-            - @module_config_channel_gotowebinar
+            - "@module_config_channel_gotowebinar"
     module_config_location_gotowebinar:
-        bundle: @bundle_location_citrix
+        bundle: "@bundle_location_citrix"
         identifier: campaignchain-gotowebinar
         displayName: 'GoToWebinar'
         channelModules:
-            - @module_config_channel_gotowebinar
+            - "@module_config_channel_gotowebinar"
     module_config_location_mailchimp_user:
-        bundle: @bundle_location_mailchimp
+        bundle: "@bundle_location_mailchimp"
         identifier: campaignchain-mailchimp-user
         displayName: 'MailChimp user'
         description: MailChimp account owner.
         channelModules:
-            - @module_config_channel_mailchimp
+            - "@module_config_channel_mailchimp"
     module_config_location_mailchimp_newsletter:
-        bundle: @bundle_location_mailchimp
+        bundle: "@bundle_location_mailchimp"
         identifier: campaignchain-mailchimp-newsletter
         displayName: 'MailChimp newsletter'
         description: The Location of a MailChimp email campaign.
         channelModules:
-            - @module_config_channel_mailchimp
+            - "@module_config_channel_mailchimp"
     module_config_location_slideshare_user:
-        bundle: @bundle_location_slideshare
+        bundle: "@bundle_location_slideshare"
         identifier: campaignchain-slideshare-user
         displayName: 'SlideShare'
         description: Holds information about a SlideShare user.
         channelModules:
-            - @module_config_channel_slideshare
+            - "@module_config_channel_slideshare"
     module_config_location_google_analytics:
-        bundle: @bundle_location_google_analytics
+        bundle: "@bundle_location_google_analytics"
         identifier: campaignchain-google-analytics
         displayName: 'Google Analytics Property'
         description: Shows analytics data for a selected web property.
         channelModules:
-            - @module_config_channel_google_analytics
+            - "@module_config_channel_google_analytics"
     module_config_location_xing_user:
-        bundle: @bundle_location_xing
+        bundle: "@bundle_location_xing"
         identifier: campaignchain-xing
         displayName: 'Xing'
         description: Holds information about a Xing user.
         channelModules:
-            - @module_config_channel_xing
+            - "@module_config_channel_xing"
     module_config_location_ezplatform_user:
-        bundle: @bundle_location_ezplatform
+        bundle: "@bundle_location_ezplatform"
         identifier: campaignchain-ezplatform-user
         displayName: 'eZ Platform User'
         description: Holds information about an eZ Platform user.
         channelModules:
-            - @module_config_channel_ezplatform
+            - "@module_config_channel_ezplatform"
     module_config_location_ezplatform_user:
-        bundle: @bundle_location_ezplatform
+        bundle: "@bundle_location_ezplatform"
         identifier: campaignchain-ezplatform-object
         displayName: 'eZ Platform Content Object'
         description: Holds information about an eZ Platform content object.
         channelModules:
-            - @module_config_channel_ezplatform
+            - "@module_config_channel_ezplatform"
 
 \CampaignChain\CoreBundle\Entity\CampaignModule:
     module_config_campaign_scheduled:
-        bundle: @bundle_campaign_scheduled
+        bundle: "@bundle_campaign_scheduled"
         identifier: campaignchain-scheduled
         displayName: 'Scheduled Campaign'
         description: A campaign with a start and end date. All related Activities and Milestones will be executed and related metrics collected while the Scheduled Campaign runs.
@@ -886,7 +886,7 @@
                 campaignchain-due: true
                 campaignchain-assignee: true
     module_config_campaign_template:
-        bundle: @bundle_campaign_template
+        bundle: "@bundle_campaign_template"
         identifier: campaignchain-template
         displayName: 'Campaign Template'
         description: Create re-usable templates of campaigns with pre-defined Activities and Milestones. You could then convert it into a Scheduled Campaign whenever you want to have the Campaign Template executed from a certain date onwards.
@@ -905,7 +905,7 @@
             default:
                 campaignchain-timespan: true
     module_config_campaign_repeating:
-        bundle: @bundle_campaign_repeating
+        bundle: "@bundle_campaign_repeating"
         identifier: campaignchain-repeating
         displayName: 'Repeating Campaign'
         description: A campaign that is being repeated automatically. For example, a campaign that runs for 30 days and is being repeated every first day of a month.
@@ -927,36 +927,36 @@
 
 \CampaignChain\CoreBundle\Entity\CampaignModuleConversion:
     module_conversion_template_to_template:
-            from: @module_config_campaign_template
-            to: @module_config_campaign_template
+            from: "@module_config_campaign_template"
+            to: "@module_config_campaign_template"
     module_conversion_template_to_scheduled:
-        from: @module_config_campaign_template
-        to: @module_config_campaign_scheduled
+        from: "@module_config_campaign_template"
+        to: "@module_config_campaign_scheduled"
     module_conversion_template_to_repeating:
-        from: @module_config_campaign_template
-        to: @module_config_campaign_repeating
+        from: "@module_config_campaign_template"
+        to: "@module_config_campaign_repeating"
     module_conversion_scheduled_to_scheduled:
-        from: @module_config_campaign_scheduled
-        to: @module_config_campaign_scheduled
+        from: "@module_config_campaign_scheduled"
+        to: "@module_config_campaign_scheduled"
     module_conversion_scheduled_to_template:
-        from: @module_config_campaign_scheduled
-        to: @module_config_campaign_template
+        from: "@module_config_campaign_scheduled"
+        to: "@module_config_campaign_template"
     module_conversion_scheduled_to_repeating:
-        from: @module_config_campaign_scheduled
-        to: @module_config_campaign_repeating
+        from: "@module_config_campaign_scheduled"
+        to: "@module_config_campaign_repeating"
     module_conversion_repeating_to_repeating:
-        from: @module_config_campaign_repeating
-        to: @module_config_campaign_repeating
+        from: "@module_config_campaign_repeating"
+        to: "@module_config_campaign_repeating"
     module_conversion_repeating_to_scheduled:
-        from: @module_config_campaign_repeating
-        to: @module_config_campaign_scheduled
+        from: "@module_config_campaign_repeating"
+        to: "@module_config_campaign_scheduled"
     module_conversion_repeating_to_template:
-        from: @module_config_campaign_repeating
-        to: @module_config_campaign_template
+        from: "@module_config_campaign_repeating"
+        to: "@module_config_campaign_template"
 
 \CampaignChain\CoreBundle\Entity\MilestoneModule:
     module_config_milestone_scheduled:
-        bundle: @bundle_milestone_scheduled
+        bundle: "@bundle_milestone_scheduled"
         identifier: campaignchain-scheduled
         displayName: 'Scheduled Milestone'
         routes:
@@ -972,9 +972,9 @@
 
 \CampaignChain\CoreBundle\Entity\ActivityModule:
     module_config_activity_facebook:
-        bundle: @bundle_activity_facebook
+        bundle: "@bundle_activity_facebook"
         channelModules:
-            - @module_config_channel_facebook
+            - "@module_config_channel_facebook"
         identifier: campaignchain-facebook-publish-status
         displayName: 'Publish Status'
         routes:
@@ -990,9 +990,9 @@
                 campaignchain-assignee: true
                 campaignchain-image: true
     module_config_activity_twitter:
-        bundle: @bundle_activity_twitter
+        bundle: "@bundle_activity_twitter"
         channelModules:
-            - @module_config_channel_twitter
+            - "@module_config_channel_twitter"
         identifier: campaignchain-twitter-update-status
         displayName: 'Update Status'
         routes:
@@ -1008,9 +1008,9 @@
                 campaignchain-assignee: true
                 campaignchain-image: true
     module_config_activity_linkedin:
-        bundle: @bundle_activity_linkedin
+        bundle: "@bundle_activity_linkedin"
         channelModules:
-            - @module_config_channel_linkedin
+            - "@module_config_channel_linkedin"
         identifier: campaignchain-linkedin-share-news-item
         displayName: 'Share News'
         routes:
@@ -1026,9 +1026,9 @@
                 campaignchain-assignee: true
                 campaignchain-image: true
     module_config_activity_gotowebinar:
-        bundle: @bundle_activity_gotowebinar
+        bundle: "@bundle_activity_gotowebinar"
         channelModules:
-            - @module_config_channel_gotowebinar
+            - "@module_config_channel_gotowebinar"
         identifier: campaignchain-gotowebinar
         displayName: 'Add an upcoming Webinar'
         routes:
@@ -1042,9 +1042,9 @@
             default:
                 campaignchain-assignee: true
     module_config_activity_mailchimp:
-        bundle: @bundle_activity_mailchimp
+        bundle: "@bundle_activity_mailchimp"
         channelModules:
-            - @module_config_channel_mailchimp
+            - "@module_config_channel_mailchimp"
         identifier: campaignchain-mailchimp
         displayName: Add upcoming newsletter campaign
         routes:
@@ -1059,9 +1059,9 @@
                 campaignchain-due: true
                 campaignchain-assignee: true
     module_config_activity_slideshare:
-        bundle: @bundle_activity_slideshare
+        bundle: "@bundle_activity_slideshare"
         channelModules:
-            - @module_config_channel_slideshare
+            - "@module_config_channel_slideshare"
         identifier: campaignchain-slideshare
         displayName: 'Schedule private slideshow'
         routes:
@@ -1075,9 +1075,9 @@
             default:
                 campaignchain-due: true
     module_config_activity_xing:
-        bundle: @bundle_activity_xing
+        bundle: "@bundle_activity_xing"
         channelModules:
-            - @module_config_channel_xing
+            - "@module_config_channel_xing"
         identifier: campaignchain-xing
         displayName: 'Post message on Xing'
         routes:
@@ -1094,7 +1094,7 @@
 
 \CampaignChain\CoreBundle\Entity\OperationModule:
     module_config_operation_facebook:
-        bundle: @bundle_operation_facebook
+        bundle: "@bundle_operation_facebook"
         identifier: campaignchain-facebook-publish-status
         displayName: 'Publish Status'
         params:
@@ -1104,7 +1104,7 @@
             job: campaignchain.job.operation.facebook.publish_status
             report: campaignchain.job.report.facebook.publish_status
     module_config_operation_twitter:
-        bundle: @bundle_operation_twitter
+        bundle: "@bundle_operation_twitter"
         identifier: campaignchain-twitter-update-status
         displayName: 'Update Status'
         params:
@@ -1114,7 +1114,7 @@
             job: campaignchain.job.operation.twitter.update_status
             report: campaignchain.job.report.twitter.update_status
     module_config_operation_linkedin:
-        bundle: @bundle_operation_linkedin
+        bundle: "@bundle_operation_linkedin"
         identifier: campaignchain-linkedin-share-news-item
         displayName: 'Share News'
         params:
@@ -1124,7 +1124,7 @@
             job: campaignchain.job.operation.linkedin.share_news_item
             report: campaignchain.job.report.linkedin.share_news_item
     module_config_operation_gotowebinar:
-        bundle: @bundle_operation_gotowebinar
+        bundle: "@bundle_operation_gotowebinar"
         identifier: campaignchain-gotowebinar
         displayName: 'Include a Webinar'
         params:
@@ -1133,7 +1133,7 @@
             operation: campaignchain.operation.gotowebinar.webinar
             report: campaignchain.job.report.gotowebinar
     module_config_operation_mailchimp:
-        bundle: @bundle_operation_mailchimp
+        bundle: "@bundle_operation_mailchimp"
         identifier: campaignchain-mailchimp-newsletter
         displayName: Add upcoming newsletter campaign
         services:
@@ -1142,7 +1142,7 @@
         params:
             owns_location: true
     module_config_operation_slideshare:
-        bundle: @bundle_operation_slideshare
+        bundle: "@bundle_operation_slideshare"
         identifier: campaignchain-slideshare
         displayName: 'Schedule private slideshow'
         description: This module shedules a slideshow previously-uploaded on SlideShare
@@ -1152,7 +1152,7 @@
         params:
             owns_location: true
     module_config_operation_ezplatform:
-        bundle: @bundle_operation_ezplatform
+        bundle: "@bundle_operation_ezplatform"
         identifier: campaignchain-ezplatform-schedule
         displayName: 'Schedule eZ Platform Content'
         description: Schedule content managed inside eZ Platform as part of a CampaignChain campaign.
@@ -1162,7 +1162,7 @@
         params:
             owns_location: true
     module_config_operation_xing:
-        bundle: @bundle_operation_xing
+        bundle: "@bundle_operation_xing"
         identifier: campaignchain-xing-message
         displayName: 'Post message on Xing'
         description: This module posts a message on Xing
@@ -1177,28 +1177,28 @@
         identifier: campaignchain-analytics-cta-tracking-per-location
         displayName: Customer Journey per Location
         description: Shows inbound and outbound Calls-to-Action for a Location.
-        bundle: @bundle_report_analytics_cta_tracking
+        bundle: "@bundle_report_analytics_cta_tracking"
         routes:
             index: campaignchain_analytics_cta_tracking_per_location_index
     module_config_metrics_per_activity:
         identifier: campaignchain-metrics-per-activity
         displayName: Metrics Per Activity
         description: This report displays charts of statistics collected per activity.
-        bundle: @bundle_report_analytics_metrics_per_activity
+        bundle: "@bundle_report_analytics_metrics_per_activity"
         routes:
             index: campaignchain_report_analytics_metrics_per_activity_index
     module_config_metrics_per_location:
         identifier: campaignchain-metrics-per-location
         displayName: Metrics Per Location
         description: This report displays charts of statistics collected per location.
-        bundle: @bundle_report_analytics_metrics_per_location
+        bundle: "@bundle_report_analytics_metrics_per_location"
         routes:
             index: campaignchain_report_analytics_metrics_per_location_index
     module_config_google_analytics:
         identifier: campaignchain-google-analytics
         displayName: Google Analytics
         description: Report Data from Google Analytics
-        bundle: @bundle_report_google_analytics
+        bundle: "@bundle_report_google_analytics"
         routes:
             index: campaignchain_report_google_analytics_index
 
@@ -1206,8 +1206,8 @@
     module_config_security_authentication_client_oauth:
         identifier: campaignchain-security-authentication-client-oauth
         displayName: OAuth Client
-        bundle: @bundle_security_authentication_client_oauth
+        bundle: "@bundle_security_authentication_client_oauth"
     module_config_security_authentication_server_oauth:
         identifier: campaignchain-security-authentication-server-oauth
         displayName: OAuth Server
-        bundle: @bundle_security_authentication_server_oauth
+        bundle: "@bundle_security_authentication_server_oauth"

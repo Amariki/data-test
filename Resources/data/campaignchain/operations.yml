@@ -16,13 +16,13 @@
     status_facebook{1..30}:
         message: <text(1000)> <url()>
         privacy: <randomElement(['EVERYONE','ALL_FRIENDS','FRIENDS_OF_FRIENDS','SELF'])>
-        operation: @operation_facebook<current()>
-        facebookLocation: @location_facebook_user_user1
+        operation: "@operation_facebook<current()>"
+        facebookLocation: "@location_facebook_user_user1"
 
 \CampaignChain\Operation\TwitterBundle\Entity\Status:
     status_twitter{1..30}:
         message: <text(100)> <url()>
-        operation: @operation_twitter<current()>
+        operation: "@operation_twitter<current()>"
 
 \CampaignChain\Operation\LinkedInBundle\Entity\NewsItem:
     news_item_linkedin{1..30}:
@@ -30,96 +30,96 @@
         linkTitle: <text(140)>
         linkDescription: <text(200)>
         linkUrl: <url()>
-        operation: @operation_linkedin<current()>
+        operation: "@operation_linkedin<current()>"
 
 \CampaignChain\Operation\GoToWebinarBundle\Entity\Webinar:
     gotowebinar_webinar1:
-        subject: @activity_gotowebinar1->name
+        subject: "@activity_gotowebinar1->name"
         description: "Join this Webinar to learn which features we've added to the latest Amariki release."
-        webinarKey: @location_gotowebinar1->identifier
-        organizerKey: @location_citrix_user1->identifier
-        registrationUrl: @location_gotowebinar1->URL
+        webinarKey: "@location_gotowebinar1->identifier"
+        organizerKey: "@location_citrix_user1->identifier"
+        registrationUrl: "@location_gotowebinar1->URL"
         timeZone: "Amarika/Los Angeles"
-        operation: @operation_gotowebinar1
+        operation: "@operation_gotowebinar1"
 
 \CampaignChain\Operation\XingBundle\Entity\XingMessage:
     status_xing{1..30}:
         message: <text(20)> <url()> <text(20)> <url()> <text(20)>
-        operation: @operation_xing<current()>
+        operation: "@operation_xing<current()>"
 
 \CampaignChain\CoreBundle\Entity\Operation:
     # GoToWebinar
     operation_gotowebinar1:
-        operationModule: @module_config_operation_gotowebinar
-        name: @activity_gotowebinar1->name
-        activity: @activity_gotowebinar1
-        startDate: @activity_gotowebinar1->startDate
-        triggerHook: @activity_gotowebinar1->triggerHook
+        operationModule: "@module_config_operation_gotowebinar"
+        name: "@activity_gotowebinar1->name"
+        activity: "@activity_gotowebinar1"
+        startDate: "@activity_gotowebinar1->startDate"
+        triggerHook: "@activity_gotowebinar1->triggerHook"
     # MailChimp
     operation_mailchimp1:
-        operationModule: @module_config_operation_mailchimp
-        name: @activity_mailchimp1->name
-        activity: @activity_mailchimp1
-        startDate: @activity_mailchimp1->startDate
-        triggerHook: @activity_mailchimp1->triggerHook
+        operationModule: "@module_config_operation_mailchimp"
+        name: "@activity_mailchimp1->name"
+        activity: "@activity_mailchimp1"
+        startDate: "@activity_mailchimp1->startDate"
+        triggerHook: "@activity_mailchimp1->triggerHook"
     # Facebook Status Update
     operation_facebook{1..30}:
-        operationModule: @module_config_operation_facebook
-        name: @activity_facebook<current()>->name
-        activity: @activity_facebook<current()>
-        startDate: @activity_facebook<current()>->startDate
-        triggerHook: @activity_facebook<current()>->triggerHook
+        operationModule: "@module_config_operation_facebook"
+        name: "@activity_facebook<current()>->name"
+        activity: "@activity_facebook<current()>"
+        startDate: "@activity_facebook<current()>->startDate"
+        triggerHook: "@activity_facebook<current()>->triggerHook"
     # Twitter Status Update
     operation_twitter{1..30}:
-        operationModule: @module_config_operation_twitter
-        name: @activity_twitter<current()>->name
-        activity: @activity_twitter<current()>
-        startDate: @activity_twitter<current()>->startDate
-        triggerHook: @activity_twitter<current()>->triggerHook
+        operationModule: "@module_config_operation_twitter"
+        name: "@activity_twitter<current()>->name"
+        activity: "@activity_twitter<current()>"
+        startDate: "@activity_twitter<current()>->startDate"
+        triggerHook: "@activity_twitter<current()>->triggerHook"
     operation_linkedin{1..30}:
-        operationModule: @module_config_operation_linkedin
-        name: @activity_linkedin<current()>->name
-        activity: @activity_linkedin<current()>
-        startDate: @activity_linkedin<current()>->startDate
-        triggerHook: @activity_linkedin<current()>->triggerHook
+        operationModule: "@module_config_operation_linkedin"
+        name: "@activity_linkedin<current()>->name"
+        activity: "@activity_linkedin<current()>"
+        startDate: "@activity_linkedin<current()>->startDate"
+        triggerHook: "@activity_linkedin<current()>->triggerHook"
     operation_xing{1..30}:
-        operationModule: @module_config_operation_xing
-        name: @activity_xing<current()>->name
-        activity: @activity_xing<current()>
-        startDate: @activity_xing<current()>->startDate
-        triggerHook: @activity_xing<current()>->triggerHook
+        operationModule: "@module_config_operation_xing"
+        name: "@activity_xing<current()>->name"
+        activity: "@activity_xing<current()>"
+        startDate: "@activity_xing<current()>->startDate"
+        triggerHook: "@activity_xing<current()>->triggerHook"
 
 # Locations created by Operations
 \CampaignChain\CoreBundle\Entity\Location:
     location_gotowebinar1:
         identifier: 1772346038074117889
-        parent: @location_citrix
-        name: @operation_gotowebinar1->name
-        operation: @operation_gotowebinar1
-        locationModule: @module_config_location_gotowebinar
+        parent: "@location_citrix"
+        name: "@operation_gotowebinar1->name"
+        operation: "@operation_gotowebinar1"
+        locationModule: "@module_config_location_gotowebinar"
         status: unpublished
         URL: https://attendee.gotowebinar.com/register/1772346038074117889
     location_facebook{1..30}:
-        parent: @location_facebook_user1
-        name: @operation_facebook<current()>->name
-        operation: @operation_facebook<current()>
-        locationModule: @module_config_location_facebook_status
+        parent: "@location_facebook_user1"
+        name: "@operation_facebook<current()>->name"
+        operation: "@operation_facebook<current()>"
+        locationModule: "@module_config_location_facebook_status"
         status: unpublished
     location_twitter{1..30}:
-        parent: @location_twitter
-        name: @operation_twitter<current()>->name
-        operation: @operation_twitter<current()>
-        locationModule: @module_config_location_twitter_status
+        parent: "@location_twitter"
+        name: "@operation_twitter<current()>->name"
+        operation: "@operation_twitter<current()>"
+        locationModule: "@module_config_location_twitter_status"
         status: unpublished
     location_linkedin{1..30}:
-        parent: @location_linkedin
-        name: @operation_linkedin<current()>->name
-        operation: @operation_linkedin<current()>
-        locationModule: @module_config_location_linkedin_user
+        parent: "@location_linkedin"
+        name: "@operation_linkedin<current()>->name"
+        operation: "@operation_linkedin<current()>"
+        locationModule: "@module_config_location_linkedin_user"
         status: unpublished
     location_xing{1..30}:
-        parent: @location_xing
-        name: @operation_xing<current()>->name
-        operation: @operation_xing<current()>
-        locationModule: @module_config_location_xing_user
+        parent: "@location_xing"
+        name: "@operation_xing<current()>->name"
+        operation: "@operation_xing<current()>"
+        locationModule: "@module_config_location_xing_user"
         status: unpublished
